@@ -1,47 +1,61 @@
-import React, {ChangeEvent, useState} from "react";
-import Article from "./Article";
-import FilteredArticles from "./FilteredArticles";
+import React, { ChangeEvent, useState } from "react";
+import Home from "./Home";
+import {
+  BrowserRouter,
+  Link,
+  Route,
+  Switch,
+} from "react-router-dom";
+import { isTemplateExpression } from "typescript";
+import "./App.css";
+import { Toolbar, Tabs, Tab } from "@material-ui/core";
+import HomeIcon from "@material-ui/icons/Home";
+import CollectionsBookmarkIcon from "@material-ui/icons/CollectionsBookmark";
+import SettingsIcon from "@material-ui/icons/Settings";
 
 function App() {
+  const menu = [
+    {
+      name: "home",
+      icon: HomeIcon,
+      page: Home,
+      url: "/home",
+    },
+    {
+      name: "following",
+      icon: CollectionsBookmarkIcon,
+      page: Home,
+      url: "/following",
+    },
+    {
+      name: "settings",
+      icon: SettingsIcon,
+      page: Home,
+      url: "/settings",
+    },
+  ];
 
-  const articles = [
-    {
-      headline:"Headline",
-      source:"https://howlround.com/sites/default/files/2018-11/nyt.png",
-      description:"description description description description description description",
-      link:"https://www.nytimes.com/2020/11/29/us/California-senate-seat-padilla-newsom.html",
-    },
-    {
-      headline:"Headline2",
-      source:"https://howlround.com/sites/default/files/2018-11/nyt.png",
-      description:"description2 description2 description2 description2 description2 description2",
-      link:"https://www.nytimes.com/2020/11/29/us/California-senate-seat-padilla-newsom.html",
-    },
-    {
-      headline:"Headline3",
-      source:"https://howlround.com/sites/default/files/2018-11/nyt.png",
-      description:"description3 description3 description3 description3 description3 description3",
-      link:"https://www.nytimes.com/2020/11/29/us/California-senate-seat-padilla-newsom.html",
-    }
-  ]
-  const [searchBar, setSB] = useState("")
-  const changeSearchQ = (e: ChangeEvent<HTMLInputElement>) => {
-    setSB(e.target.value)
-  }
-  
   return (
-    <div>
-      <p> Welcome! Today is 11/29! Here's your news for today: </p>
-      <input value={searchBar} placeholder="search.." onChange={changeSearchQ} />
+    <div style={{ width: "70%" }}>
+      <Toolbar>
+        <Tabs variant="fullWidth">
+          {menu.map((item) => (
+            <Tab
+              label={item.name}
+              icon={<item.icon />}
+              component={Link}
+              to={item.url}
+            >
+              <div>{<item.page />}</div>
+            </Tab>
+          ))}
+        </Tabs>
+      </Toolbar>
 
-      {/* <Article
-        headline="Headline"
-        source="https://howlround.com/sites/default/files/2018-11/nyt.png"
-        description="description description description description description description"
-        link="https://www.nytimes.com/2020/11/29/us/California-senate-seat-padilla-newsom.html"
-      /> */}
-
-      <FilteredArticles articles = {articles} query = {searchBar} />
+      <Switch>
+        <Route path="/home" component={Home} />
+        <Route path="/two" component={Home} />
+      </Switch>
     </div>
   );
 }

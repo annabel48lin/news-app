@@ -21,7 +21,7 @@ const FilteredArticles = (props: info) => {
   ) : (
     <div>
       {filtered.map((article) => (
-        <Article
+        <Article key = {article.headline}
           headline={article.headline}
           source={article.source}
           description={article.description}
