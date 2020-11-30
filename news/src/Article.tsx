@@ -42,19 +42,26 @@ const useStyles = makeStyles((theme) => ({
     padding: "0px",
   },
   cover: {
-    height: 0,
-    paddingTop: '5%',
+    display: "flex",
+    height: "auto",
+    // paddingTop: '5%',
     float: "right",
-    width: "30%"  
+    width: "30%",
+    maxHeight: "50%",
+    // alignText: "right",
+    // alignItems: "right",
+    // alignSelf: "right"
   },
-  // img: {
-  //   // height: "auto",
-  //   objectFit: "contain",
-  //   // maxHeight: "100%", 
-  //   marginLeft: "auto", 
-  //   marginRight: "auto",
-  //   display: "block",
-  // }
+  img: {
+    height: "auto",
+    width: "100%",
+    maxHeight: "75px",
+    objectFit: "contain",
+    // maxHeight: "100%",
+    margin: "0px",
+    // display: "block",
+    objectPosition: "100% 0%"
+  },
 }));
 
 const Article = ({ headline, source, description, link }: Props) => {
@@ -69,9 +76,7 @@ const Article = ({ headline, source, description, link }: Props) => {
         <div className={classes.details}>
           <CardContent className={classes.content}>
             <Typography component="h5" variant="h5">
-              <Box fontWeight="fontWeightBold" >
-                {headline}
-              </Box>
+              <Box fontWeight="fontWeightBold">{headline}</Box>
             </Typography>
             <Typography variant="subtitle1" color="textSecondary">
               {description}
@@ -79,7 +84,12 @@ const Article = ({ headline, source, description, link }: Props) => {
           </CardContent>
         </div>
 
-        <CardMedia className={classes.cover} image={source}  title={source}  />
+        <div className={classes.cover}>
+          
+          <img className={classes.img} src={source}></img>
+    
+        </div>
+        {/* <CardMedia className={classes.cover} image={source}  title={source}  /> */}
       </Link>
     </Card>
   );
