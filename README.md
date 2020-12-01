@@ -4,4 +4,4 @@ Description: Displays news from various sources and allows the user to search fo
 
 Group Members: Annabel Lin (all273), Justin Hsu (jah574)
 
-Github: https://github.coecis.cornell.edu/all273/webdev-final-project/tree/master/news
+Github: https://github.coecis.cornell.edu/all273/webdev-final-project
