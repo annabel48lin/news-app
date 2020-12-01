@@ -5,7 +5,7 @@ import FilteredArticles from "./FilteredArticles";
 import Topic from "./Topic";
 
 
-const Home = () => {
+const Following = () => {
   const [searchBar, setSearchBar] = useState("");
   const articles = [
     {
@@ -38,36 +38,23 @@ const Home = () => {
     },
   ];
 
+  const following = ["Politics", "World", "Tech"]
+  
+  const containsStr = (arr : string[], str : string) => {
+    for (const topic of arr) {
+      if (topic === str) return true
+    }
+    return false 
+  };
 
-  // US, World, Politics, Business, Tech, Entertainment
-  const topicsInit = [
-    {
-      name: "US",
-      fav: false
-    },
-    {
-      name: "World",
-      fav: false
-    },
-    {
-      name: "Politics",
-      fav: false
-    },
-    {
-      name: "Business",
-      fav: false
-    },
-    {
-      name: "Tech",
-      fav: false
-    },
-    {
-      name: "Entertainment",
-      fav: false
-    },
-  ]
+  const topicsInit = following.map((topicName)=> ({name: topicName, fav: false}))
+  
+  
+  // articles that have topics you are following (based on settings)
+  let filteredArticles =  articles.filter((article)=>
+    (containsStr (following, article.topic))
+  )
 
-  //if all favs are false, display all articles. Else, display the ones where fav is true
   const [topics, setTopics] = useState(topicsInit);
   // pass this in to Topic 
   const updateTopics = (name: string) => {
@@ -76,18 +63,16 @@ const Home = () => {
     setTopics(newArr)
   }
 
-  const allFalse = topics.reduce((res, curr)=> (!curr.fav && res), true)
+  const allFalse = topics.reduce((res, curr)=> (!curr.fav && res), true);
 
   const contains = (arr : { name: string;  fav: boolean} [], str : string) => {
     for (const val of arr) {
-      if (val.name === str && val.fav===true) return true
+        if (val.name === str && val.fav===true) return true
     }
     return false 
   };
-  
-  //filter by topic here??
-  //see if topic is faved. if no topic is faved, return all
-  let filteredArticles = articles;
+
+  //articles in topics that are clicked/chosen
   if (!allFalse){
     filteredArticles =  articles.filter((article)=>
     (contains (topics, article.topic))
@@ -95,8 +80,10 @@ const Home = () => {
   }
   
   return (
-    <div >
+    <div>
       <h1 style={{marginLeft: "20px"}}> Welcome! Today is 11/29. Here's your news for today: </h1>
+
+      
       <div style={{marginLeft: "20px"}}>
         {topics.map((topic)=>(
           
@@ -104,6 +91,7 @@ const Home = () => {
    
         ))}
       </div>
+
 
       <div style={{ float: "right", textAlign: "right" }}>
         <input
@@ -114,10 +102,12 @@ const Home = () => {
       </div>
 
       <div style={{ width: "100%", float: "left" }}>
-        <FilteredArticles articles={filteredArticles} query={searchBar} />
+          {filteredArticles===[] ? <span> There are no articles </span>: 
+          <span><FilteredArticles articles={filteredArticles} query={searchBar} /></span>}
+        
       </div>
     </div>
   );
 };
 
-export default Home;
+export default Following;

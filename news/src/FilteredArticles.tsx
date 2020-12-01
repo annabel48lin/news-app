@@ -17,7 +17,7 @@ const FilteredArticles = (props: info) => {
   );
 
   return filtered.length < 1 ? (
-    <div>No articles found</div>
+    <h3 style={{marginLeft: "20px"}}> No articles found </h3> 
   ) : (
     <div>
       {filtered.map((article) => (

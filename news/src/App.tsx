@@ -1,12 +1,12 @@
-import React, { ChangeEvent, useState } from "react";
+import React, {useState} from 'react';
 import Home from "./Home";
+import Following from "./Following";
+import Settings from "./Settings"
 import {
-  BrowserRouter,
   Link,
   Route,
   Switch,
 } from "react-router-dom";
-import { isTemplateExpression } from "typescript";
 import "./App.css";
 import { Toolbar, Tabs, Tab } from "@material-ui/core";
 import HomeIcon from "@material-ui/icons/Home";
@@ -34,29 +34,46 @@ function App() {
       url: "/settings",
     },
   ];
+  
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+    setValue(newValue);
+  };
+
+
+  const width = 1500;
+
+  const widthModifier = {
+    width: `${width}px`,
+  };
 
   return (
-    <div style={{ width: "70%" }}>
+      <div style={{ width: "70%" }}>
       <Toolbar>
-        <Tabs variant="fullWidth">
+        <Tabs style={widthModifier} variant="fullWidth" value={value} onChange={handleChange}>
           {menu.map((item) => (
+           
             <Tab
+              key = {item.name}
               label={item.name}
               icon={<item.icon />}
               component={Link}
               to={item.url}
             >
-              <div>{<item.page />}</div>
             </Tab>
+            
           ))}
         </Tabs>
       </Toolbar>
 
       <Switch>
         <Route path="/home" component={Home} />
-        <Route path="/two" component={Home} />
+        <Route path="/following" component={Following} />
+        <Route path="/settings" component={Settings} />
       </Switch>
     </div>
+    
   );
 }
 
