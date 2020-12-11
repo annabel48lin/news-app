@@ -67,23 +67,21 @@ function compare(a: Article, b: Article) {
 
 app.get("/newsToday", async function (req: Request, res: Response) {
   const country = req.query.country ? req.query.country : "us";
-  const categories: string[] = req.query.categories
+  let categories: string[] = req.query.categories
     ? (req.query.categories as string[])
     : [];
-
-  // string | QueryString.ParsedQs | string[] | QueryString.ParsedQs[] | undefined
-
+  if (typeof req.query.categories === "string")
+    categories = [req.query.categories];
+  console.log("categories", categories);
   let url = base + "top-headlines?" + "country=" + country;
 
   let news: CleanArticle[] = [];
 
-  console.log("hello");
   // if categories are not specified, return all articles in country
   if (categories.length === 0) {
     console.log(url + apiKey);
     const posts = await axios.get(url + apiKey);
     const articles: Article[] = posts.data.articles;
-
     news = articles.map((a) => clean(a));
 
     console.log("news", news);
@@ -93,22 +91,25 @@ app.get("/newsToday", async function (req: Request, res: Response) {
   else {
     let all_articles: Article[] = [];
     url = url + "&category=";
-    console.log("categories", categories);
 
     for (let i: number = 0; i < categories.length; i++) {
       const category: string = categories[i];
       console.log("category in loop", category);
       console.log(url + category + apiKey);
-      const posts = await axios.get(url + category + apiKey);
-      const articles: Article[] = posts.data.articles;
-      // console.log(articles)
-      all_articles = all_articles.concat(articles);
-      // console.log("here1");
-      console.log(all_articles);
+      try {
+        const posts = await axios.get(url + category + apiKey);
+        const articles: Article[] = posts.data.articles;
+        // console.log(articles)
+        all_articles = all_articles.concat(articles);
+        // console.log("here1");
+        // console.log(all_articles);
+        console.log("Success!");
+      } catch (e) {
+        console.error("Failure!");
+      }
     }
-
-    console.log("here2");
-    console.log(all_articles);
+    // console.log("here2");
+    console.log("all_articles", all_articles);
     all_articles = all_articles.sort((a, b) => compare(a, b));
 
     news = all_articles.map((a) => clean(a));
