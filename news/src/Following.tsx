@@ -81,7 +81,7 @@ const Following = () => {
   
   return (
     <div>
-      <h1 style={{marginLeft: "20px"}}> Welcome! Today is 11/29. Here's your news for today: </h1>
+      <h2 style={{marginLeft: "20px"}}> Welcome! It's 12/1. Here's your news for today: </h2>
 
       
       <div style={{marginLeft: "20px"}}>
