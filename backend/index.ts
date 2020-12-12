@@ -72,19 +72,19 @@ app.get("/newsToday", async function (req: Request, res: Response) {
     : [];
   if (typeof req.query.categories === "string")
     categories = [req.query.categories];
-  console.log("categories", categories);
+  // console.log("categories", categories);
   let url = base + "top-headlines?" + "country=" + country;
 
   let news: CleanArticle[] = [];
 
   // if categories are not specified, return all articles in country
   if (categories.length === 0) {
-    console.log(url + apiKey);
+    // console.log(url + apiKey);
     const posts = await axios.get(url + apiKey);
     const articles: Article[] = posts.data.articles;
     news = articles.map((a) => clean(a));
 
-    console.log("news", news);
+    // console.log("news", news);
   }
 
   // if categories are specified, get articles in each category and merge into one list (should we sort by time?)
@@ -94,8 +94,8 @@ app.get("/newsToday", async function (req: Request, res: Response) {
 
     for (let i: number = 0; i < categories.length; i++) {
       const category: string = categories[i];
-      console.log("category in loop", category);
-      console.log(url + category + apiKey);
+      // console.log("category in loop", category);
+      // console.log(url + category + apiKey);
       try {
         const posts = await axios.get(url + category + apiKey);
         const articles: Article[] = posts.data.articles;
@@ -103,13 +103,13 @@ app.get("/newsToday", async function (req: Request, res: Response) {
         all_articles = all_articles.concat(articles);
         // console.log("here1");
         // console.log(all_articles);
-        console.log("Success!");
+        // console.log("Success!");
       } catch (e) {
         console.error("Failure!");
       }
     }
     // console.log("here2");
-    console.log("all_articles", all_articles);
+    // console.log("all_articles", all_articles);
     all_articles = all_articles.sort((a, b) => compare(a, b));
 
     news = all_articles.map((a) => clean(a));
@@ -148,7 +148,7 @@ app.post("/newUserPref", async function (req: Request, res: Response) {
 });
 
 // update a post
-app.post("/UserPref/:id", async function (req: Request, res: Response) {
+app.post("/UpdateUserPref/:id", async function (req: Request, res: Response) {
   const id: string = req.params.id;
   const newUserPref = req.body;
   await postsCollection.doc(id).update(newUserPref);
@@ -156,19 +156,11 @@ app.post("/UserPref/:id", async function (req: Request, res: Response) {
 });
 
 // read posts by name
-app.get("/post/:id", async function (req: Request, res: Response) {
-  // const namePostsDoc = await postsCollection
-  //   .where("id", "==", req.params.id)
-  //   .get();
-  // const userprefs: UserPrefWithID[] = [];
-  // for (let doc of namePostsDoc.docs) {
-  //   let userpref: UserPrefWithID = doc.data() as UserPrefWithID;
-  //   userpref.id = doc.id;
-  //   userprefs.push(userpref);
-  // }
-
-  const userpref = await postsCollection.doc(req.params.id);
-  res.send(userpref);
+app.get("/UserPref/:id", async function (req: Request, res: Response) {
+  const doc = await postsCollection.doc(req.params.id).get();
+  let post: UserPrefWithID = doc.data() as UserPrefWithID;
+  // console.log(post)
+  res.send(post);
 });
 
 // tell express to listen for requests on port 8080
