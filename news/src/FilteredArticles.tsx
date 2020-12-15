@@ -2,10 +2,12 @@ import React from "react";
 import Article from "./Article";
 
 type AProps = {
-  readonly headline: string;
   readonly source: string;
+  readonly author: string;
+  readonly title: string;
   readonly description: string;
-  readonly link: string;
+  readonly url: string;
+  readonly urlToImage: string;
 };
 type info = { articles: AProps[]; query: string };
 
@@ -13,7 +15,7 @@ const FilteredArticles = (props: info) => {
   const filtered: AProps[] = props.articles.filter(
     (s) =>
       s.description.toLowerCase().indexOf(props.query.toLowerCase()) !== -1 ||
-      s.headline.toLowerCase().indexOf(props.query.toLowerCase()) !== -1
+      s.title.toLowerCase().indexOf(props.query.toLowerCase()) !== -1
   );
 
   return filtered.length < 1 ? (
@@ -21,11 +23,13 @@ const FilteredArticles = (props: info) => {
   ) : (
     <div>
       {filtered.map((article) => (
-        <Article key = {article.headline}
-          headline={article.headline}
-          source={article.source}
-          description={article.description}
-          link={article.link}
+        <Article key = {article.title}
+          source = {article.source}
+          author = {article.author}
+          title = {article.title}
+          description = {article.description}
+          url = {article.url}
+          urlToImage = {article.urlToImage}
         />
       ))}
     </div>

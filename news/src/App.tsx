@@ -71,6 +71,7 @@ function App() {
         <Route path="/home" component={Home} />
         <Route path="/following" component={Following} />
         <Route path="/settings" component={Settings} />
+        <Route path="/" component={Home} /> 
       </Switch>
     </div>
     

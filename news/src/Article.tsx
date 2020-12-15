@@ -12,10 +12,12 @@ import {
 } from "@material-ui/core";
 
 type Props = {
-  readonly headline: string;
   readonly source: string;
+  readonly author: string;
+  readonly title: string;
   readonly description: string;
-  readonly link: string;
+  readonly url: string;
+  readonly urlToImage: string;
 };
 
 const useStyles = makeStyles((theme) => ({
@@ -36,10 +38,12 @@ const useStyles = makeStyles((theme) => ({
     float: "left",
     verticalAlign: "top",
     marginTop: "0px",
+    marginBottom: "0px",
   },
   content: {
     flex: "1 0 auto",
     padding: "0px",
+    paddingBottom: "0px",
   },
   cover: {
     display: "flex",
@@ -48,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
     float: "right",
     width: "30%",
     maxHeight: "50%",
+    padding: "0px",
     // alignText: "right",
     // alignItems: "right",
     // alignSelf: "right"
@@ -55,16 +60,23 @@ const useStyles = makeStyles((theme) => ({
   img: {
     height: "auto",
     width: "100%",
-    maxHeight: "75px",
+    // maxHeight: "75px",
     objectFit: "contain",
     // maxHeight: "100%",
     margin: "0px",
     // display: "block",
-    objectPosition: "100% 0%"
+    objectPosition: "100% 0%",
   },
 }));
 
-const Article = ({ headline, source, description, link }: Props) => {
+const Article = ({
+  source,
+  author,
+  title,
+  description,
+  url,
+  urlToImage,
+}: Props) => {
   const classes = useStyles();
   const theme = useTheme();
 
@@ -72,22 +84,35 @@ const Article = ({ headline, source, description, link }: Props) => {
     // <div className="Border">
 
     <Card className={classes.root}>
-      <Link href={link} target="_blank" color="inherit">
-        <div className={classes.details}>
-          <CardContent className={classes.content}>
+      <Link
+        href={url}
+        target="_blank"
+        color="inherit"
+        style={{ padding: "0px" }}
+      >
+        <div className={classes.details} style={{ padding: "0px" }}>
+          <CardContent className={classes.content} style={{ padding: "0px" }}>
             <Typography component="h5" variant="h5">
-              <Box fontWeight="fontWeightBold">{headline}</Box>
+              <Box fontWeight="fontWeightBold">{title}</Box>
             </Typography>
             <Typography variant="subtitle1" color="textSecondary">
               {description}
+            </Typography>
+
+            <br />
+            <Typography
+              variant="subtitle2"
+              color="textPrimary"
+              style={{ display: "flex", padding: "0px" }}
+            >
+              {source + " "}
+              {author == null || author == undefined || author === "" ? " " : " · " + author}
             </Typography>
           </CardContent>
         </div>
 
         <div className={classes.cover}>
-          
-          <img className={classes.img} src={source}></img>
-    
+          <img className={classes.img} src={urlToImage} alt={urlToImage}></img>
         </div>
         {/* <CardMedia className={classes.cover} image={source}  title={source}  /> */}
       </Link>
