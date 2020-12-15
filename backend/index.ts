@@ -6,6 +6,7 @@ import type { Request, Response } from "express";
 
 // Path to wherever you put your service-account.json
 const serviceAccount = require("./service-account.json");
+const key = require("./apikey.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -19,7 +20,7 @@ const db = admin.firestore();
 const port = 8080;
 app.use(bodyParser.json());
 
-const apiKey = "&apiKey=910452c99f54428bb487e74cdb976f0f";
+const apiKey = "&apiKey=" + key.key;
 const base = "https://newsapi.org/v2/";
 
 type Article = {
@@ -134,32 +135,26 @@ type UserPref = {
 
 // Add id field to our Post type
 type UserPrefWithID = UserPref & {
-  id: string;
+  email: string;
 };
 
-const postsCollection = db.collection("posts");
+const postsCollection = db.collection("userprefs");
 
 // create a post
-app.post("/newUserPref", async function (req: Request, res: Response) {
+app.post("/UserPref/:email", async function (req: Request, res: Response) {
+  const email = req.params.email;
   const userpref: UserPref = req.body;
-  const myDoc = postsCollection.doc();
-  await myDoc.set(userpref);
-  res.send(myDoc.id);
-});
+  //potentially check email with firebase
 
-// update a post
-app.post("/UpdateUserPref/:id", async function (req: Request, res: Response) {
-  const id: string = req.params.id;
-  const newUserPref = req.body;
-  await postsCollection.doc(id).update(newUserPref);
-  res.send("UPDATED");
+  //if email is free, create. else, update instead
+  await postsCollection.doc(email).set(userpref)
+  res.send(userpref)
 });
 
 // read posts by name
-app.get("/UserPref/:id", async function (req: Request, res: Response) {
-  const doc = await postsCollection.doc(req.params.id).get();
+app.get("/UserPref/:email", async function (req: Request, res: Response) {
+  const doc = await postsCollection.doc(req.params.email).get();
   let post: UserPrefWithID = doc.data() as UserPrefWithID;
-  // console.log(post)
   res.send(post);
 });
 
