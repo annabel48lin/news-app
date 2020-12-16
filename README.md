@@ -1,6 +1,6 @@
-# webdev-final-project
+# news-app
 
-Description: 
+A news aggregation app that uses [newsAPI](https://newsapi.org/), where each user is able to adjust their preferences (country, categories of interest). 
 
 # Frontend (part 1): 
 Displays news from various sources and allows the user to search for keywords, filter by topic, and set favorite topics.
