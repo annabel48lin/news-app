@@ -3,6 +3,7 @@ import axios from "axios";
 import admin from "firebase-admin";
 import bodyParser from "body-parser";
 import type { Request, Response } from "express";
+import firebase from "firebase/app";
 
 // Path to wherever you put your service-account.json
 const serviceAccount = require("./service-account.json");
@@ -103,12 +104,13 @@ const categories = [
 ];
 
 type returnedArticles = {
-  articles: CleanArticleWithCategory[]
-}
+  articles: CleanArticleWithCategory[];
+};
 
 // query param: country
+// note: user does not have to be logged in for this
 app.get("/newsToday", async function (req: Request, res: Response) {
-  const country = req.query.country ? req.query.country as string: "us";
+  const country = req.query.country ? (req.query.country as string) : "us";
 
   const doc = await articlesCollection.doc(country).get();
   let articles = doc.data() as returnedArticles;
@@ -125,36 +127,33 @@ const articlesCollection = db.collection("articles");
  * - categorized articles (compile them from each category)
  */
 app.post("/refreshNews", async function (req: Request, res: Response) {
-  const country = req.query.country ? req.query.country as string: "us";
+  const country = req.query.country ? (req.query.country as string) : "us";
   let url = base + "top-headlines?" + "country=" + country;
-  
 
-  let all_articles:ArticleWithCategory[] = [];
+  let all_articles: ArticleWithCategory[] = [];
   for (let i: number = 0; i < categories.length; i++) {
     const category: string = categories[i];
     try {
-    const posts = await axios.get(url + "&category=" + category + apiKey);
-    let articles: Article[] = posts.data.articles;
-    
-    let categorized = articles.map((a) => {
-      (a as any).topic = category;
-      return a as ArticleWithCategory;
-    });
+      const posts = await axios.get(url + "&category=" + category + apiKey);
+      let articles: Article[] = posts.data.articles;
 
+      let categorized = articles.map((a) => {
+        (a as any).topic = category;
+        return a as ArticleWithCategory;
+      });
 
-    all_articles = all_articles.concat(categorized);
+      all_articles = all_articles.concat(categorized);
     } catch {
       console.error("Failure!");
     }
   }
   all_articles = all_articles.sort((a, b) => compare(a, b));
   let cleaned = all_articles.map((a) => clean(a));
-  console.log(all_articles)
+  console.log(all_articles);
 
-  await articlesCollection.doc(country).set({"articles": cleaned});
-  res.send(cleaned)
+  await articlesCollection.doc(country).set({ articles: cleaned });
+  res.send(cleaned);
 });
-
 
 /*
 app.get("/newsToday", async function (req: Request, res: Response) {
@@ -221,7 +220,10 @@ app.get("/newsToday", async function (req: Request, res: Response) {
 
 // Define a type for our Post document stored in Firebase
 type UserPref = {
-  categories: string[];
+  categories: {
+    name: string;
+    following: boolean;
+  }[];
   country: string;
 };
 
@@ -230,24 +232,88 @@ type UserPrefWithID = UserPref & {
   email: string;
 };
 
+const inituserpref = {
+  country : "us",
+  categories : [
+    {
+      name: "Business",
+      following: false,
+    },
+    {
+      name: "Entertainment",
+      following: false,
+    },
+    {
+      name: "Health",
+      following: false,
+    },
+    {
+      name: "Science",
+      following: false,
+    },
+    {
+      name: "Sports",
+      following: false,
+    },
+    {
+      name: "Technology",
+      following: false,
+    },
+  ]
+}
+
 const postsCollection = db.collection("userprefs");
 
 // create a post
 app.post("/UserPref/:email", async function (req: Request, res: Response) {
-  const email = req.params.email;
-  const userpref: UserPref = req.body;
-  //potentially check email with firebase
+  admin
+    .auth()
+    .verifyIdToken(req.headers.idtoken as string)
+    .then(async () => {
+      const email = req.params.email;
+      const userpref: UserPref = req.body;
+      //potentially check email with firebase
 
-  //if email is free, create. else, update instead
-  await postsCollection.doc(email).set(userpref);
-  res.send(userpref);
+  
+
+      //if email is free, create. else, update instead
+      await postsCollection.doc(email).set(userpref);
+      res.send(userpref);
+    })
+    .catch(() => {
+      console.log("auth error");
+    });
 });
 
 // read posts by name
 app.get("/UserPref/:email", async function (req: Request, res: Response) {
-  const doc = await postsCollection.doc(req.params.email).get();
-  let post: UserPrefWithID = doc.data() as UserPrefWithID;
-  res.send(post);
+  const email = req.params.email
+  admin
+    .auth()
+    .verifyIdToken(req.headers.idtoken as string)
+    .then(async () => {
+      // const doc = await postsCollection.doc(email).get();
+      // let post: UserPrefWithID = doc.data() as UserPrefWithID;
+      // res.send(post);
+
+      var ref = firebase.database().ref("userprefs/" + email);
+      ref.once("value").then(async function (snapshot) {
+        if (snapshot.exists() ) {
+          const doc = await postsCollection.doc(email).get();
+          let post: UserPrefWithID = doc.data() as UserPrefWithID;
+          res.send(post);
+        }
+        else {
+          await postsCollection.doc(email).set(inituserpref);
+          res.send(inituserpref);
+        }
+
+      });
+
+    })
+    .catch(() => {
+      console.log("auth error");
+    });
 });
 
 // tell express to listen for requests on port 8080
