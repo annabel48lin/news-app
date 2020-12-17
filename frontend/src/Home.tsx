@@ -19,8 +19,6 @@ const Home = () => {
   const articles:CleanArticle[] = require("./dummyArticles.json")
 
 
-
-
   // US, World, Politics, Business, Tech, Entertainment
   const topicsInit = [
     {
@@ -77,7 +75,7 @@ const Home = () => {
   // }
   
   return (
-    <div >
+    <div>
       <h2 style={{marginLeft: "20px"}}> Welcome! It's 12/1. Here's your news for today: </h2>
       <div style={{marginLeft: "20px"}}>
         {topics.map((topic)=>(

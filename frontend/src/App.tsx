@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import Home from "./Home";
 import Following from "./Following";
-import Settings from "./Settings"
+import Settings from "./Settings";
+import Authentication from "./Authenticated"
 import {
   Link,
   Route,

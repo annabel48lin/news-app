@@ -147,8 +147,8 @@ app.post("/UserPref/:email", async function (req: Request, res: Response) {
   //potentially check email with firebase
 
   //if email is free, create. else, update instead
-  await postsCollection.doc(email).set(userpref)
-  res.send(userpref)
+  await postsCollection.doc(email).set(userpref);
+  res.send(userpref);
 });
 
 // read posts by name
@@ -160,5 +160,5 @@ app.get("/UserPref/:email", async function (req: Request, res: Response) {
 
 // tell express to listen for requests on port 8080
 app.listen(8080, function () {
-  console.log("server started");
+  console.log("Backend started");
 });

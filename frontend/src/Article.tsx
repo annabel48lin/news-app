@@ -106,7 +106,7 @@ const Article = ({
               style={{ display: "flex", padding: "0px" }}
             >
               {source + " "}
-              {author == null || author == undefined || author === "" ? " " : " · " + author}
+              {author == null || author === undefined || author === "" ? " " : " · " + author}
             </Typography>
           </CardContent>
         </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Topic  from "./Topic";
-
+import Authenticated from "./Authenticated";
 // Initialize the FirebaseUI Widget using Firebase.
 // var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
@@ -43,9 +43,12 @@ const Settings = () => {
     console.log(topics)
 
     return (
+        
         <div style={{marginLeft: "20px"}}>
             <h1>Sign In </h1>
+            <Authenticated>
             <text>(Will implement later after Firebase is set up)</text>
+            </Authenticated>
             <h1>Followed Topics: </h1>
             <div style={{marginLeft: "20px"}}>
             {topics.map((topic)=>(
@@ -55,6 +58,7 @@ const Settings = () => {
             ))}
         </div>
       </div>
+      
     )
 
 }
