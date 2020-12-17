@@ -12,6 +12,7 @@ const Home = () => {
     source: string;
     author: string;
     title: string;
+    topic: string;
     description: string;
     url: string;
     urlToImage: string;
@@ -22,30 +23,31 @@ const Home = () => {
   // US, World, Politics, Business, Tech, Entertainment
   const topicsInit = [
     {
-      name: "US",
-      fav: false
-    },
-    {
-      name: "World",
-      fav: false
-    },
-    {
-      name: "Politics",
-      fav: false
-    },
-    {
       name: "Business",
-      fav: false
-    },
-    {
-      name: "Tech",
       fav: false
     },
     {
       name: "Entertainment",
       fav: false
     },
+    {
+      name: "Health",
+      fav: false
+    },
+    {
+      name: "Science",
+      fav: false
+    },
+    {
+      name: "Sports",
+      fav: false
+    },
+    {
+      name: "Technology",
+      fav: false
+    },
   ]
+
 
   //if all favs are false, display all articles. Else, display the ones where fav is true
   const [topics, setTopics] = useState(topicsInit);
@@ -60,19 +62,19 @@ const Home = () => {
 
   const contains = (arr : { name: string;  fav: boolean} [], str : string) => {
     for (const val of arr) {
-      if (val.name === str && val.fav===true) return true
+      if (val.name.toLowerCase() === str && val.fav===true) return true
     }
     return false 
   };
   
   //filter by topic here??
-  //see if topic is faved. if no topic is faved, return all
-  let filteredArticles = articles;
-  // if (!allFalse){
-  //   filteredArticles =  articles.filter((article)=>
-  //   (contains (topics, article.topic))
-  // )
-  // }
+  //see if topic is faved. if no topic is faved, return general (has all topics)
+  let filteredArticles = articles.filter(article => article.topic === "general");
+  if (!allFalse){
+    filteredArticles =  articles.filter((article)=>
+    (contains (topics, article.topic))
+  )
+  }
   
   return (
     <div>

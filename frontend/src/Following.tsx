@@ -11,6 +11,7 @@ const Following = () => {
     source: string;
     author: string;
     title: string;
+    topic: string;
     description: string;
     url: string;
     urlToImage: string;
@@ -53,11 +54,11 @@ const Following = () => {
   };
 
   //articles in topics that are clicked/chosen
-  // if (!allFalse){
-  //   filteredArticles =  articles.filter((article)=>
-  //   (contains (topics, article.topic))
-  // )
-  // }
+  if (!allFalse){
+    filteredArticles =  articles.filter((article)=>
+    (contains (topics, article.topic))
+  )
+  }
   
   return (
     <div>

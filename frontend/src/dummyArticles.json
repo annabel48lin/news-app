@@ -1,162 +1,1262 @@
 [
     {
-        "source": "The Washington Post",
-        "author": "Antonia Noori Farzan",
-        "title": "Live updates: Death toll tops 300,000 as first health care workers receive coronavirus vaccine - The Washington Post",
-        "description": "More than 16.5 million coronavirus infections have been confirmed in the United States since February.",
-        "url": "https://www.washingtonpost.com/nation/2020/12/15/coronavirus-covid-live-updates-us/",
-        "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/12-14-2020/t_61edad9c61664721ba2c4d7664fa688b_name_pjimage.jpg&w=1440"
-    },
-    {
-        "source": "Fox News",
-        "author": "Nate Day",
-        "title": "Blake Shelton reveals he hid Gwen Stefani's engagement ring in his truck for 'about a week' - Fox News",
-        "description": "Blake Shelton said that he hid Gwen Stefani's engagement ring in his truck for about a week.",
-        "url": "https://www.foxnews.com/entertainment/blake-shelton-hid-gwen-stefani-engagement-ring-truck-week",
-        "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2020/12/Gwen-stefani-blake-shelton-2020-grammys.jpg"
+        "url": "https://www.cnbc.com/2020/12/16/mp-materials-ceo-on-being-a-picks-and-shovels-play-for-ev-market.html",
+        "title": "MP Materials CEO says rare magnets supplier is a 'picks-and-shovels play' for EV market - CNBC",
+        "source": "CNBC",
+        "description": "MP Materials CEO James Litinsky addressed confusion about the rare earth products the company provides in the electric vehicle space.",
+        "author": "Tyler Clifford",
+        "topic": "business",
+        "urlToImage": "https://sc.cnbcfm.com/applications/cnbc.com/staticcontent/img/cnbc_logo.gif?v=1524171804"
     },
     {
         "source": "YouTube",
         "author": null,
-        "title": "Lamar Jackson: 'I Didn't Pull a Paul Pierce\" | Baltimore Ravens - Baltimore Ravens",
-        "description": "QB Lamar Jackson talks battling through cramps, his return to the field and Justin Tucker's game-winning kick. #BaltimoreRavens #Ravens #NFL Subscribe to the...",
-        "url": "https://www.youtube.com/watch?v=pgjOf2CgLZo",
-        "urlToImage": "https://i.ytimg.com/vi/pgjOf2CgLZo/maxresdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=BzBiTYwSP2A",
+        "title": "First US report of serious adverse vaccine reaction - ABC News",
+        "topic": "business",
+        "description": "A health worker in Juneau, Alaska, who had no history of allergies, suffered an allergic reaction during the 15-minute observation period following the shot.",
+        "urlToImage": "https://i.ytimg.com/vi/BzBiTYwSP2A/maxresdefault.jpg"
     },
     {
-        "source": "YouTube",
+        "description": "According to CNBC, U.S. officials said Wednesday they quarantined several thousand doses of Pfizer’s coronavirus vaccine in California and Alabama this week after an “anomaly” in the transportation process caused the storage temperature to get too cold.",
+        "topic": "business",
+        "urlToImage": "https://www.al.com/resizer/DCU-QgfdaTADX5G27Lmi1ruyHhE=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/BAM4SREAGZBQVKGSOGGOEWPQD4.jpg",
+        "url": "https://www.al.com/news/birmingham/2020/12/us-quarantines-some-alabama-covid-19-vaccine-shipments-after-vials-too-cold.html",
+        "author": "William Thornton | wthornton@al.com",
+        "title": "U.S. quarantines some Alabama COVID-19 vaccine shipments after vials too cold - AL.com",
+        "source": "AL.com"
+    },
+    {
+        "title": "Bitcoin price hits $21,569 as Dave Portnoy misses out on $160K - Cointelegraph",
+        "url": "https://cointelegraph.com/news/bitcoin-price-hits-21-569-as-dave-portnoy-misses-out-on-160k",
+        "author": "Turner Wright",
+        "description": "Bitcoin surged more than 9% today to reach an all-time high of more than $21,569.",
+        "topic": "business",
+        "urlToImage": "https://s3.cointelegraph.com/uploads/2020-12/73c295df-df01-4b9f-b7e5-26bf0a95b4dd.jpg",
+        "source": "Cointelegraph"
+    },
+    {
+        "author": "CBSNewYork Team",
+        "urlToImage": "https://newyork.cbslocal.com/wp-content/uploads/sites/14578484/2020/12/Storm-Timing.jpg?w=1024",
+        "description": "A major winter storm is blowing into our area Wednesday. It's poised to be the first major snow of its kind in New York City in several years.",
+        "url": "https://newyork.cbslocal.com/2020/12/16/snow-storm-winter-weather-forecast-timeline-ny-nj-ct/",
+        "title": "TIMELINE: Tracking The Snow In New York, New Jersey And Connecticut - CBS New York",
+        "source": "Cbslocal.com",
+        "topic": "business"
+    },
+    {
+        "description": "\"I'm actually thrilled by all the negativity because it means stocks can still go higher,\" the \"Mad Money\" host said.",
+        "topic": "business",
         "author": null,
-        "title": "Cyberpunk 2077 for Xbox One and PlayStation 4 Review - IGN",
-        "description": "Reviewed by Destin Legarie on PlayStation 4 and Xbox One. Also available on PC and Google Stadia.\"If your only option right now is playing Cyberpunk 2077 on ...",
-        "url": "https://www.youtube.com/watch?v=QfpoTjUz1BY",
-        "urlToImage": "https://i.ytimg.com/vi/QfpoTjUz1BY/maxresdefault.jpg"
+        "url": "https://www.youtube.com/watch?v=VH_LZfNr3qk",
+        "urlToImage": "https://i.ytimg.com/vi/VH_LZfNr3qk/hqdefault.jpg",
+        "title": "Jim Cramer: This is a great moment for the stock market - CNBC Television",
+        "source": "YouTube"
     },
     {
-        "source": "YouTube",
-        "author": null,
-        "title": "Taylor Swift on Turning 31, New Album, Fan Theories, Documentary & Boyfriend's Pseudonym - Jimmy Kimmel Live",
-        "description": "Taylor talks about turning 31, the many rumors about her albums, hiding Easter eggs for her fans to find, the mistake that ended up on her Folklore album cov...",
-        "url": "https://www.youtube.com/watch?v=qOX0FK1DW5U",
-        "urlToImage": "https://i.ytimg.com/vi/qOX0FK1DW5U/maxresdefault.jpg"
+        "description": "Honda is recalling over 1.4 million vehicles in the U.S. to repair drive shafts that can break, window switches that can overheat and a software flaw.",
+        "author": "The Associated Press",
+        "source": "NBC News",
+        "title": "Honda recalls 1.4M U.S. vehicles for software, other problems - NBC News",
+        "url": "https://www.nbcnews.com/business/consumer/honda-recalls-1-4m-u-s-vehicles-software-other-problems-n1251496",
+        "topic": "business",
+        "urlToImage": "https://media1.s-nbcnews.com/j/newscms/2020_51/3436298/201216-ohio-honda-factory-2017-ac-641p_5efb8e19fa12c739afccc378f9ff5a70.nbcnews-fp-1200-630.jpg"
     },
     {
-        "source": "Engadget",
+        "author": "Joseph S. Pete joseph.pete@nwi.com, 219-933-3316",
+        "source": "nwitimes.com",
+        "url": "https://www.nwitimes.com/business/local/watch-now-3-floyds-permanently-closing-munster-brewpub/article_62e5cb85-9670-5387-a025-d4ee5a83040d.html",
+        "topic": "business",
+        "urlToImage": "https://bloximages.chicago2.vip.townnews.com/nwitimes.com/content/tncms/assets/v3/editorial/6/2e/62e5cb85-9670-5387-a025-d4ee5a83040d/5fdaa7b888b80.preview.jpg?crop=1763%2C992%2C0%2C91&resize=1120%2C630&order=crop%2Cresize",
+        "description": "3 Floyds told investors it is permanently closing its landmark brewpub in Munster, which has been a major draw to Northwest Indiana.",
+        "title": "WATCH NOW: 3 Floyds permanently closing Munster brewpub | Northwest Indiana Business Headlines - nwitimes.com"
+    },
+    {
+        "topic": "business",
+        "urlToImage": "https://cdn.geekwire.com/wp-content/uploads/2020/03/nadella-security.jpg",
+        "url": "https://www.geekwire.com/2020/microsoft-unleashes-death-star-solarwinds-hackers-extraordinary-response-breach/",
+        "source": "GeekWire",
+        "author": "https://www.facebook.com/christopherbuddcommunications",
+        "description": "“Now witness the firepower of this fully armed and operational Battle Station.” – Emperor Palpatine, Return of the Jedi This week Microsoft took a series of dramatic steps against the recent…",
+        "title": "Microsoft unleashes ‘Death Star’ on SolarWinds hackers in extraordinary response to breach - GeekWire"
+    },
+    {
+        "topic": "business",
+        "author": "Emily McCormick",
+        "title": "Stock market news live updates: Stock futures open little changed as stimulus talks roll on - Yahoo Finance",
+        "description": "Stock futures opened little changed Wednesday evening, with stimulus talks in Washington still at the center of investors’ attention.",
+        "url": "https://finance.yahoo.com/news/stock-market-news-live-updates-december-17-2020-231053523.html",
+        "source": "Yahoo Entertainment",
+        "urlToImage": "https://s.yimg.com/ny/api/res/1.2/.7iEt6uw3wxOVswZ9usl_g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTIwMDA7aD0xMzM1/https://s.yimg.com/os/creatr-uploaded-images/2020-12/bb9e5780-357e-11eb-bffb-9a90b3b4c66a"
+    },
+    {
+        "topic": "business",
+        "urlToImage": null,
+        "source": "Hollywood Reporter",
+        "url": "https://www.hollywoodreporter.com/news/netflix-adds-african-telecom-mogul-strive-masiyiwa-to-board-of-directors",
+        "author": "Natalie Jarvey",
+        "title": "Netflix Adds African Telecom Mogul Strive Masiyiwa to Board of Directors - Hollywood Reporter",
+        "description": "Masiyiwa replaces Susan Rice, who has stepped down from the streamer's board to join President-elect Joe Biden's administration."
+    },
+    {
+        "urlToImage": "https://s.yimg.com/ny/api/res/1.2/AXjsR52RlfHeaHkt3FSxRA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTIwMDA7aD0xMzM0/https://s.yimg.com/uu/api/res/1.2/0M.Vl5L11PK9LJH8ZU_PTA--~B/aD0xNjM3O3c9MjQ1NTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-us/usa_today_news_641/f1f98fe7e36c3d28ff08e1556db47807",
+        "title": "Coronavirus updates: COVID baby boom didn't happen; second home test gets OK; 2M more vaccine doses to be delivered next week - Yahoo! Voices",
+        "description": "Operation Warp Speed says 2 million vaccine doses will be delivered next week. Meanwhile, a pandemic baby boom didn't quite happen. Latest news",
+        "topic": "business",
+        "source": "Yahoo Entertainment",
+        "url": "https://www.yahoo.com/lifestyle/coronavirus-updates-texas-joins-california-090003932.html",
+        "author": "Jorge L. Ortiz and Ryan W. Miller, USA TODAY"
+    },
+    {
+        "topic": "business",
+        "source": "Politico",
+        "urlToImage": "https://static.politico.com/b6/e0/bf8257a948ef936111505d393a19/201216-pfizer-2-ap-773.jpg",
+        "title": "FDA says Pfizer vaccine vials hold extra doses, expanding supply - POLITICO",
+        "author": "Sarah Owermohle",
+        "description": "Using every drop from overfilled vials could boost available doses by up to 40 percent.",
+        "url": "https://www.politico.com/news/2020/12/16/pfizer-vaccine-extra-doses-447117"
+    },
+    {
+        "title": "Tyson Foods Fires 7 Plant Managers Over Betting Ring On Workers Getting COVID-19 - NPR",
+        "urlToImage": "https://media.npr.org/assets/img/2020/12/16/ap_20191657317230_wide-5a8baf25ec40e18966df92381dcac59cf91d716a.jpg?s=1400",
+        "source": "NPR",
+        "url": "https://www.npr.org/2020/12/16/947275866/tyson-foods-fires-7-plant-managers-over-betting-ring-on-workers-getting-covid-19",
+        "description": "More than 1,000 employees at the pork plant in Iowa have been infected by the virus, and at least six have died. The company launched an independent investigation into the complaints last month.",
         "author": "",
-        "title": "The new 'Mortal Kombat' movie reaches theaters and HBO Max on April 16th - Engadget",
-        "description": "The new 'Mortal Kombat' movie has a release date: April 16th. It will be available in theaters and streaming via HBO Max.",
-        "url": "https://www.engadget.com/mortal-kombat-hbo-max-release-date-044215503.html",
-        "urlToImage": "https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-12%2F6e686ba0-3e8d-11eb-9bfd-05216fd59be3&client=amp-blogside-v2&signature=58f5398e0ab14d96cfd2e9e7794e7731714e4bd8"
+        "topic": "business"
     },
     {
-        "source": "Hawaii News Now",
+        "author": "Dave Nethers",
+        "topic": "business",
+        "description": "As more of the vaccines become available to the general public, there is growing interest over whether any employer, university or school district actually can make the vaccine a requirement.",
+        "title": "Can employers require COVID-19 vaccine? - WJW FOX 8 News Cleveland",
+        "url": "https://fox8.com/news/coronavirus/can-employers-require-covid-19-vaccine/",
+        "source": "fox8.com",
+        "urlToImage": "https://fox8.com/wp-content/uploads/sites/12/2020/12/B4EDB15F16E648D283009AF9D7F5A011_5.jpg?w=1280"
+    },
+    {
+        "author": "Beth Skwarecki",
+        "title": "No Flight Can Truly Be 'COVID-Free' - Lifehacker",
+        "topic": "business",
+        "source": "Lifehacker.com",
+        "url": "https://lifehacker.com/no-flight-can-truly-be-covid-free-1845898434",
+        "description": "Delta is now offering “quarantine-free” flights to Europe, which, in a bold move they are also billing as “COVID-free.” If only it were so easy to guarantee that the coronavirus won’t be on the plane. The flights do use a testing protocol to reduce the chance…",
+        "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/kvh8xjmllcav1zyvskuc.jpg"
+    },
+    {
+        "urlToImage": "http://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb_0.jpg",
+        "author": null,
+        "url": "https://www.nasa.gov/press-release/nasa-awards-launch-services-contract-to-blue-origin-for-new-glenn-launch-services/",
+        "description": "NASA has awarded a NASA Launch Services (NLS) II contract to Blue Origin and their New Glenn launch service in accordance with the contract’s on-ramp provision.",
+        "topic": "business",
+        "source": "NASA",
+        "title": "NASA Awards Launch Services Contract to Blue Origin for New Glenn Launch Services - NASA"
+    },
+    {
+        "topic": "business",
+        "author": "Jason Lemon",
+        "urlToImage": "https://d.newsweek.com/en/full/1687039/jeff-bezos-amazon.jpg",
+        "url": "https://www.newsweek.com/mackenzie-scotts-gifts-cast-unflattering-light-bezos-covid-capitalism-1555350",
+        "source": "Newsweek",
+        "description": "Jeff Bezos' ex-wife has donated nearly $6 billion thus far in 2020, after signing the Giving Pledge following her divorce from the Amazon founder last year.",
+        "title": "Mackenzie Scott's Gifts Cast Unflattering Light on Bezos' COVID Capitalism - Newsweek"
+    },
+    {
+        "urlToImage": "https://fox8.com/wp-content/uploads/sites/12/2020/12/mcd-chainsaw.jpg?w=1280",
+        "description": "PORTLAND, Maine (WTVO) — A man in Portland, Maine, was arrested after multiple 911 calls reported that a man was chasing people with a chainsaw at McDonald’s on Tuesday afternoon. Responding officers found the man at a nearby inn and he was arrested without f…",
+        "author": "WTVO",
+        "title": "Man with chainsaw steals McDonald’s meal and chases manager in parking lot, police say - WJW FOX 8 News Cleveland",
+        "url": "https://fox8.com/news/man-with-chainsaw-steals-mcdonalds-meal-and-chases-manager-in-parking-lot-police-say/",
+        "topic": "business",
+        "source": "fox8.com"
+    },
+    {
+        "url": "https://deadline.com/2020/12/caa-wga-reach-deal-that-will-bring-writers-back-into-agency-fold-1234657859/",
+        "title": "CAA, WGA Reach Deal That Will Bring Writers Back Into Agency Fold; Lawsuit Dropped; WME Hopeful It Is Next - Deadline",
+        "source": "Deadline",
+        "topic": "business",
+        "author": "Mike Fleming Jr",
+        "description": "2ND UPDATE, 1:15 PM: Two developments on CAA and WGA. CAA has ended its legal battle with the guild today, notifying U.S. District Court Judge Andre Birotte Jr. that it “hereby withdraws its Motion for Preliminary Injunction as it has reached a settlement wit…",
+        "urlToImage": "https://deadline.com/wp-content/uploads/2020/09/CAA-WGA-2-shot.jpg?w=1000"
+    },
+    {
+        "url": "https://www.eonline.com/news/1219541/julianne-houghs-ex-chuck-wicks-breaks-their-pact-and-reveals-why-they-really-broke-up",
+        "title": "Julianne Hough’s Ex Chuck Wicks Breaks Their “Pact” and Reveals Why They Really Broke Up - E! NEWS",
+        "urlToImage": "https://akns-images.eonline.com/eol_images/Entire_Site/20201116/rs_1200x1200-201216131022-1200-Julianne-Hough-and-Chuck-Wicks-acm.jpg?fit=around%7C1080:1080&output-quality=90&crop=1080:1080;center,top",
+        "source": "Eonline.com",
+        "topic": "entertainment",
+        "description": "Chuck Wicks shared with Carly Pearce on his podcast Talk to Chuck that there was a lot of drama at the end of his relationship with Julianne Hough.",
+        "author": "Kaitlin Reilly"
+    },
+    {
+        "title": "Tom Cruise unleashes rant on \"Mission: Impossible\" crew for not following coronavirus safety protocols - CBS News",
+        "description": "\"If I see you do it again you're f***ing gone,\" Cruise says to crew members he apparently saw violating social distancing rules.",
+        "urlToImage": "https://cbsnews1.cbsistatic.com/hub/i/r/2020/12/16/a7008c31-b79b-4879-9c28-0969441ccd5e/thumbnail/1200x630/58998260f6dffe25113f9f4f6eea87cb/gettyimages-1288983136.jpg",
+        "url": "https://www.cbsnews.com/news/tom-cruise-rant-mission-impossible-coronavirus-safety-protocols/",
+        "source": "CBS News",
+        "author": "Caitlin O'Kane",
+        "topic": "entertainment"
+    },
+    {
+        "topic": "entertainment",
+        "source": "TMZ",
+        "urlToImage": "https://imagez.tmz.com/image/95/16by9/2020/12/17/9557691c8ac744a7b363440cdba59861_xl.jpg",
+        "author": "TMZ Staff",
+        "description": "Lil Baby and Stephen Jackson are throwing a massive birthday party for George Floyd's daughter, Gianna.",
+        "title": "Lil Baby Throwing Birthday Party for George Floyd's Daughter - TMZ",
+        "url": "https://www.tmz.com/2020/12/16/lil-baby-throwing-birthday-party-george-floyd-daughter-stephen-jackson/"
+    },
+    {
+        "source": "The Verge",
+        "title": "Hilary Duff says the Lizzie McGuire reboot is officially dead - The Verge",
+        "topic": "entertainment",
+        "url": "https://www.theverge.com/2020/12/16/22179576/disney-plus-lizzie-mcguire-not-picked-up-hulu-hilary-duff",
+        "author": "Ian Carlos Campbell",
+        "urlToImage": "https://cdn.vox-cdn.com/thumbor/jOzzXdlVGpOUby3rS5DmJaP9pn8=/0x0:681x357/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22176374/lizzie_mcguire_lizzie_and_gordo_photo_e1574211145930.jpg",
+        "description": "Hilary Duff has confirmed via Instagram post that the Lizzie McGuire Disney Plus series is officially dead. The star attempted to keep the show alive by publicly asking Disney to move it to Hulu in February, but no change ever came."
+    },
+    {
+        "source": "YouTube",
+        "author": null,
+        "description": "Writer/director Paul W.S. Anderson's Monster Hunter reminds us how rare good video game movies are, creating a film breathtaking for all the ways it steps wr...",
+        "title": "Monster Hunter Movie Review - IGN",
+        "topic": "entertainment",
+        "url": "https://www.youtube.com/watch?v=xd7XeKJ-NV4",
+        "urlToImage": "https://i.ytimg.com/vi/xd7XeKJ-NV4/maxresdefault.jpg"
+    },
+    {
+        "title": "Ellen DeGeneres has 'bad' back pain amid COVID-19 diagnosis: 'I didn't know that was a symptom' - Yahoo Entertainment",
+        "source": "Yahoo Entertainment",
+        "url": "https://www.yahoo.com/entertainment/ellen-degeneres-back-pain-covid19-diagnosis-symptom-005531780.html",
+        "topic": "entertainment",
+        "author": "Taryn Ryder",
+        "description": "The talk show host shared a health update with fans, days after she tested positive for the coronavirus.",
+        "urlToImage": "https://s.yimg.com/ny/api/res/1.2/KdQ5ImxRULid2UlzmIBG0g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTIwMDA7aD0xMzMz/https://s.yimg.com/os/creatr-images/2020-01/dcd4cc40-31b0-11ea-af63-ac72942f6c3b"
+    },
+    {
+        "description": "The 28-year-old rapper caught a snap of the weapon resting on his luxe car seat before posing on the tarmac near his own private jet.",
+        "title": "Travis Scott travels with protection as he flashes a gold gun before boarding a private jet - Daily Mail",
+        "topic": "entertainment",
+        "urlToImage": "https://i.dailymail.co.uk/1s/2020/12/17/00/36939858-0-image-a-86_1608164258423.jpg",
+        "author": "Tracy Wright",
+        "source": "Daily Mail",
+        "url": "https://www.dailymail.co.uk/tvshowbiz/article-9061833/Travis-Scott-travels-protection-flashes-gold-gun-boarding-private-jet.html"
+    },
+    {
+        "urlToImage": "https://www.goldderby.com/wp-content/uploads/2020/09/sun-the-masked-singer-season-4-costumes.jpg",
+        "topic": "entertainment",
+        "source": "Gold Derby",
+        "description": "On “The Masked Singer” finale on December 16, the last three celebrities in the competition will perform one more time as the Crocodile, Mushroom and Sun. At the end of the hour, one of them will be named the winner of season 4 of this hit reality series. We’…",
+        "title": "‘The Masked Singer’ finale spoilers: The Sun is … - Gold Derby",
+        "url": "https://www.goldderby.com/article/2020/the-masked-singer-spoilers-the-sun-is-leann-rimes-finale/",
+        "author": "Paul Sheehan"
+    },
+    {
+        "author": "David Robb",
+        "url": "https://deadline.com/2020/12/writers-guild-caa-franchise-agreement-deal-reached-read-the-documents-1234658001/",
+        "urlToImage": "https://deadline.com/wp-content/uploads/2020/09/CAA-WGA-New-2-shot-logo.jpg?w=1000",
+        "description": "The WGA confirmed Wednesday that it has reached a deal with CAA for a new franchise agreement that will allow the guild members to return to the agency. “The WGA and CAA have reached a deal on a franchise agreement,” the guild told its members today. “Therefo…",
+        "source": "Deadline",
+        "title": "WGA Confirms CAA Franchise Agreement, Ending Their Long-Running Battle – Read The Terms - Deadline",
+        "topic": "entertainment"
+    },
+    {
+        "url": "https://www.latimes.com/california/story/2020-12-16/covid-19-christmas-singalong-kirk-cameron-maskless-people",
+        "topic": "entertainment",
+        "author": "Faith E. Pinho",
+        "urlToImage": "https://ca-times.brightspotcdn.com/dims4/default/2a851e5/2147483647/strip/true/crop/2048x1075+0+91/resize/1200x630!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fe3%2F42%2F87b5874cb56e1f1344b76ff10efb%2Flat-hhkirk-lz56oupd20120307130400",
+        "description": "Summoned by the actor Kirk Cameron, hundreds of maskless people belted out Christmas carols in a Thousand Oaks parking lot in a protest against coronavirus restrictions.",
+        "source": "Los Angeles Times",
+        "title": "Kirk Cameron draws maskless people to Christmas singalong - Los Angeles Times"
+    },
+    {
+        "title": "Prince William and Kate Middleton release family Christmas card photo - CNN",
+        "description": "A new family portrait of William and Catherine, The Duke and Duchess of Cambridge, and their three children, George, Charlotte and Louis, has been released for their official Christmas card this year.",
+        "source": "CNN",
+        "author": "Max Foster and Amy Woodyatt, CNN",
+        "topic": "entertainment",
+        "url": "https://www.cnn.com/2020/12/16/uk/duke-duchess-cambridge-christmas-card-intl-scli-gbr/index.html",
+        "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/201216171159-royal-christmas-card-2020-intl-scli-super-tease.jpg"
+    },
+    {
+        "author": "Brian Marks",
+        "title": "Anna Kournikova celebrates her twins Nicholas and Lucy turning three with dueling cute portraits - Daily Mail",
+        "urlToImage": "https://i.dailymail.co.uk/1s/2020/12/16/20/36931350-0-image-a-13_1608150999390.jpg",
+        "description": "Anna Kournikova hasn't shared much news of her family throughout the pandemic, but she posted cute photos of her twins Lucy and Nicholas to mark them turning three on Wednesday.",
+        "topic": "entertainment",
+        "url": "https://www.dailymail.co.uk/tvshowbiz/article-9061053/Anna-Kournikova-celebrates-twins-Nicholas-Lucy-turning-three-dueling-cute-portraits.html",
+        "source": "Daily Mail"
+    },
+    {
+        "urlToImage": "https://images.mktw.net/im-274483/social",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/heres-everything-coming-to-netflix-in-january-2021-and-whats-leaving-11608158305",
+        "description": "‘Cobra Kai,’ Nicolas Cage’s potty mouth highlight a lighter-than-usual month of new releases",
+        "topic": "entertainment",
+        "author": "Mike Murphy",
+        "title": "Here's everything coming to Netflix in January 2021 -- and what's leaving - MarketWatch"
+    },
+    {
+        "urlToImage": "https://cnet1.cbsistatic.com/img/anwXZg1DquSloewNvcnjJageE7c=/1200x630/2020/06/14/9486c8a0-3bef-4d10-a756-b082d75f4acb/hbo-max-logo-phone-2766.jpg",
+        "url": "https://www.cnet.com/news/hbo-max-roku-strike-deal-at-last-yes-you-can-stream-wonder-woman-1984/",
+        "source": "CNET",
+        "author": "Joan E. Solsman",
+        "topic": "entertainment",
+        "title": "HBO Max, Roku strike deal at last (yes, you'll be able to stream Wonder Woman 1984) - CNET",
+        "description": "Roku, maker of some of the most popular streaming devices in the US, has never supported HBO Max's app. That changes tomorrow."
+    },
+    {
+        "description": "Creed frontman Scott Stapp has been tapped to portray Frank Sinatra in an upcoming biopic about Ronald Reagan. Reagan, which stars Dennis Quaid as the former President, will include a scene of Sinatra singing at the Ambassador Hotel’s Cocoanut Grove club.",
+        "topic": "entertainment",
+        "author": null,
+        "source": "Stereogum",
+        "urlToImage": "https://static.stereogum.com/uploads/2020/12/scott-stapp-frank-sinatra-ronald-reagan-1608156397.jpg",
+        "title": "Scott Stapp Playing Frank Sinatra In Ronald Reagan Biopic - Stereogum",
+        "url": "https://www.stereogum.com/2111157/scott-stapp-frank-sinatra-role-ronald-reagan-biopic/news/"
+    },
+    {
+        "urlToImage": "https://i.dailymail.co.uk/1s/2020/12/16/22/36934528-0-image-a-50_1608156349400.jpg",
+        "title": "Katharine McPhee, 36, officially confirms she is expecting a baby with husband David Foster, 71 - Daily Mail",
+        "description": "The singer, 36, has been spotted with a bump these last few months, but Wednesday marked the first time she officially confirmed the baby news.",
+        "source": "Daily Mail",
+        "topic": "entertainment",
+        "url": "https://www.dailymail.co.uk/tvshowbiz/article-9061311/Katharine-McPhee-36-confirms-expecting-baby-husband-David-Foster-71.html",
+        "author": "Christine Rendon"
+    },
+    {
+        "topic": "entertainment",
+        "author": null,
+        "url": "https://wdwnt.com/2020/12/breaking-electrical-water-pageant-returning-to-walt-disney-world/",
+        "urlToImage": "https://sir.wdwnt.com/wdwnt.com/2020/06/1/0/4/106CFA06-2162-4FA4-811B-1A11CC522E64.jpeg",
+        "description": "The Electrical Water Pageant was recently spotted testing at Walt Disney World, possibly signaling its eventual return!",
+        "title": "BREAKING: Electrical Water Pageant Returning to Walt Disney World - wdwnt.com",
+        "source": "wdwnt.com"
+    },
+    {
+        "urlToImage": "https://www.rollingstone.com/wp-content/uploads/2020/12/tfpm.jpg",
+        "topic": "entertainment",
+        "title": "Taylor Swift Moved Her Album Release Date for Paul McCartney - Rolling Stone",
+        "description": "\"People do keep out of each other's way. It’s a nice thing to do,\" McCartney told Howard Stern",
+        "source": "Rolling Stone",
+        "url": "https://www.rollingstone.com/music/music-news/paul-mccartney-taylor-swift-evermore-howard-stern-1104937/",
+        "author": "Claire Shaffer"
+    },
+    {
+        "description": "Plus, the 15-year-old fan favorite shared how Blake Shelton reacted to getting beat by Team Gwen!",
+        "author": "Meredith B. Kile‍",
+        "url": "https://www.etonline.com/the-voice-winner-carter-rubin-shares-the-career-advice-he-got-from-coach-gwen-stefani-exclusive",
+        "topic": "entertainment",
+        "urlToImage": "https://www.etonline.com/sites/default/files/styles/max_1280x720/public/images/2020-12/gettyimages-1230148935.jpg?h=c6980913&itok=dPrTIQ-7",
+        "source": "Entertainment Tonight",
+        "title": "'The Voice' Winner Carter Rubin Shares the Career Advice He Got From Coach Gwen Stefani (Exclusive) - Entertainment Tonight"
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=KJ6JvlcQzwg",
+        "urlToImage": "https://i.ytimg.com/vi/KJ6JvlcQzwg/maxresdefault.jpg",
+        "title": "Did Tristan Thompson Get Caught CHEATING Again?!? - Clevver News",
+        "source": "YouTube",
+        "topic": "entertainment",
+        "description": "Earlier this week Tristan Thompson was seen out to dinner with a mystery blonde in Boston while Khloe Kardashian was back in LA and fans wondered if he was c...",
+        "author": null
+    },
+    {
+        "description": "Months of pressure from state and city leaders failed to secure aid for local governments as part of the financial stimulus deal emerging in Congress.",
+        "author": "Stephanie Murray, Kellie Mejdrich",
+        "topic": "general",
+        "source": "Politico",
+        "title": "'It is madness': Governors rage over states stimulus snub - Politico",
+        "url": "https://www.politico.com/news/2020/12/16/coronavirus-stimulus-state-local-aid-447191",
+        "urlToImage": "https://static.politico.com/11/37/10177bbd418fb4ccc612eabe5a88/201216-phil-murphy-ap-773.jpg"
+    },
+    {
+        "topic": "general",
+        "urlToImage": "https://cdn.vox-cdn.com/thumbor/jOzzXdlVGpOUby3rS5DmJaP9pn8=/0x0:681x357/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22176374/lizzie_mcguire_lizzie_and_gordo_photo_e1574211145930.jpg",
+        "author": "Ian Carlos Campbell",
+        "title": "Hilary Duff says the Lizzie McGuire reboot is officially dead - The Verge",
+        "url": "https://www.theverge.com/2020/12/16/22179576/disney-plus-lizzie-mcguire-not-picked-up-hulu-hilary-duff",
+        "source": "The Verge",
+        "description": "Hilary Duff has confirmed via Instagram post that the Lizzie McGuire Disney Plus series is officially dead. The star attempted to keep the show alive by publicly asking Disney to move it to Hulu in February, but no change ever came."
+    },
+    {
+        "description": "President-elect Joe Biden is also likely to get the vaccine next week.",
+        "urlToImage": "https://img.buzzfeed.com/buzzfeed-static/static/2020-12/17/1/asset/8fa865d5bddb/sub-buzz-1336-1608166858-12.jpg?crop=2725:1426;80,195",
+        "author": "Salvador Hernandez",
+        "source": "BuzzFeed News",
+        "url": "https://www.buzzfeednews.com/article/salvadorhernandez/mike-pence-joe-biden-vaccine",
+        "title": "Mike And Karen Pence Will Get The COVID Vaccine Before Cameras This Friday - BuzzFeed News",
+        "topic": "general"
+    },
+    {
+        "author": "Brittany Shammas, Ariana Eunjung Cha, Ben Guarino, Jacqueline Dupree",
+        "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/EPIKKAR6PII6XNMLCYR7MJTZMA.jpg&w=1440",
+        "topic": "general",
+        "url": "https://www.washingtonpost.com/health/2020/12/16/hospitals-covid-overwhelmed/",
+        "title": "Record numbers of covid-19 patients push hospitals and staffs to the limit - The Washington Post",
+        "description": "One public hospital in Los Angeles is at a level below triage when it will have to discourage people from coming altogether.",
+        "source": "The Washington Post"
+    },
+    {
+        "topic": "general",
+        "description": "10 minutes after receiving the Pfizer vaccine, a health care worker at a hospital in Alaska was rushed to the ER with a severe rash and shortness of breath. ...",
+        "title": "First Severe Reaction To Covid Vaccine Reported In U.S. | NBC Nightly News - NBC News",
+        "author": null,
+        "source": "YouTube",
+        "url": "https://www.youtube.com/watch?v=MI2ke9iEaTE",
+        "urlToImage": "https://i.ytimg.com/vi/MI2ke9iEaTE/maxresdefault.jpg"
+    },
+    {
+        "author": "Leah Asmelash, CNN",
+        "topic": "general",
+        "source": "CNN",
+        "title": "He was sentenced to life in prison while a teenager. 18 years later, Myon Burrell walks free - CNN",
+        "url": "https://www.cnn.com/2020/12/16/us/myon-burrell-release-trnd/index.html",
+        "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/201216163617-01-myon-burrell-release-super-tease.jpg",
+        "description": "A Minnesota man sentenced to life in prison as a teenager when Amy Klobuchar was the county attorney has been released, after years of claiming innocence."
+    },
+    {
+        "title": "NCAA football betting: Public money 'flowing in' on Alabama, Notre Dame in conference title games - Yahoo Sports",
+        "source": "Yahoo Entertainment",
+        "author": "Sam Cooper",
+        "urlToImage": "https://s.yimg.com/ny/api/res/1.2/GFvxAFMJTjgTmgyI0lrk_w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTIwMDA7aD0xMzMz/https://s.yimg.com/os/creatr-uploaded-images/2020-12/5a13b230-4000-11eb-aabb-6e1962a2a2d5",
+        "description": "We’ve reached conference championship weekend in college football, and BetMGM has already seen heavy betting action with the games still a few days away.",
+        "url": "https://sports.yahoo.com/ncaa-football-betting-public-money-flowing-in-on-alabama-notre-dame-in-conference-title-games-003916908.html",
+        "topic": "general"
+    },
+    {
+        "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2020/12/FB-ATT.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+        "title": "Apple rebuffs Facebook criticism, says iOS anti-tracking features are about ’standing up for our users’ - 9to5Mac",
+        "source": "9to5Mac",
+        "url": "https://9to5mac.com/2020/12/16/apple-facebook-app-tracking-transparency/",
+        "topic": "general",
+        "author": null,
+        "description": "After a barrage of criticism from Facebook today, Apple is yet again doubling down on its forthcoming App Tracking Transparency feature. The feature will launch to users in 2021, and Apple says it “does not require Facebook to change its approach to tracking …"
+    },
+    {
+        "source": "New York Times",
+        "author": "Emily Cochrane, Nicholas Fandos, Catie Edmondson",
+        "urlToImage": "https://static01.nyt.com/images/2020/12/16/us/16HPMconnell-vid-cover-sub/16HPMconnell--briefing-promo--facebookJumbo-v3.jpg",
+        "description": "",
+        "url": "https://www.nytimes.com/2020/12/16/us/mcconnell-tells-republicans-that-georgias-senators-were-getting-hammered-for-congresss-failure-to-act.html",
+        "topic": "general",
+        "title": "McConnell tells Republicans that Georgia’s senators were ‘getting hammered’ for Congress’s failure to act. - The New York Times"
+    },
+    {
+        "source": "Space.com",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/BupVfi64bPD97aAZD3YSGQ-1200-80.jpg",
+        "description": "The first one is scheduled to launch in 2023.",
+        "topic": "general",
+        "title": "Canadian astronauts will start flying to the moon in 2023 with NASA's Artemis missions - Space.com",
+        "url": "https://www.space.com/canadian-astronauts-artemis-moon-missions",
+        "author": "Elizabeth Howell"
+    },
+    {
+        "description": "J.K. Dobbins is set to be the next rookie RB star.",
+        "topic": "general",
+        "url": "https://www.cbssports.com/fantasy/football/news/fantasy-football-week-15-start-em-sit-em-can-j-k-dobbins-be-the-next-rookie-running-back-to-break-out/",
+        "title": "Fantasy Football Week 15 Start 'Em & Sit 'Em: Can J.K. Dobbins be the next rookie running back to break out? - CBS Sports",
+        "source": "CBS Sports",
+        "author": "",
+        "urlToImage": "https://sportshub.cbsistatic.com/i/r/2020/12/08/c72dd901-81c4-4c20-b5a3-a996928b2fbb/thumbnail/1200x675/0bb4b47bfcd1d9306db22834e76114f8/dobbins-ravens.jpg"
+    },
+    {
+        "description": "A former top Trump appointee urged health officials to adopt a \"herd immunity\" approach to Covid-19, according to internal emails obtained by the House Oversight Committee and shared with reporters.",
+        "url": "https://www.cnn.com/2020/12/16/politics/trump-administration-herd-immunity/index.html",
+        "title": "Former Trump appointee encouraged herd immunity strategy for Covid-19, internal emails reveal - CNN",
+        "topic": "general",
+        "author": "Kristin Wilson, Daniella Diaz and Betsy Klein, CNN",
+        "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/201214220507-coronavirus-testing-201210-super-tease.jpg",
+        "source": "CNN"
+    },
+    {
+        "url": "https://venturebeat.com/2020/12/16/cd-projekt-red-risked-the-reputations-of-others-to-insulate-cyberpunk-2077/",
+        "description": "CD Projekt Red is on a rampage that is tearing through its reputation as well as the reputation of its partners and the media.",
+        "source": "VentureBeat",
+        "title": "CD Projekt Red risked the reputations of others to insulate Cyberpunk 2077 - VentureBeat",
+        "topic": "general",
+        "author": "Jeff Grubb",
+        "urlToImage": "https://venturebeat.com/wp-content/uploads/2020/12/cyberpunk2077-gq-11jun18_b.jpg?w=1200&strip=all"
+    },
+    {
+        "urlToImage": "https://www.gannett-cdn.com/presto/2020/12/16/USAT/9db5613e-fcce-46af-af78-626b72c02ae2-GTY_1209777457.JPG?crop=2999,1687,x0,y152&width=1600&height=800&fit=bounds",
+        "author": "Marc Ramirez",
+        "title": "In stirring speech, Pete Buttigieg makes history again for LGBTQ Americans as first gay cabinet nominee - USA TODAY",
+        "source": "USA Today",
+        "description": "LGBTQ organizations and advocates across the country lauded Joe Biden’s nomination of Pete Buttigieg as national transportation secretary.",
+        "topic": "general",
+        "url": "https://www.usatoday.com/story/news/nation/2020/12/16/pete-buttigieg-gay-and-out-what-means-bidens-cabinet/3924110001/"
+    },
+    {
+        "url": "https://abc7.com/la-covid-los-angeles-covid-19-coronavirus-county-hospitals/8827741",
+        "title": "Los Angeles County again breaks records for COVID-19 deaths and cases as hospitals strained to limits - KABC-TV",
+        "topic": "general",
+        "source": "KABC-TV",
+        "description": "Los Angeles County has once again shattered its daily record for new coronavirus cases and deaths, as officials warn that vaccine shipments are not coming fast enough to stop hospitals from being stretched to their limits right now.",
+        "urlToImage": "https://cdn.abcotvs.com/dip/images/8828920_5334.jpg?w=1600",
+        "author": "By ABC7.com staff"
+    },
+    {
+        "description": "Shelby, chairman of the Senate Appropriations committee, said on Wednesday that it was time to move on from the presidential contest one day after Senate Majority Leader Mitch McConnell congratulated President-elect Joe Biden during a speech on the Senate flo…",
+        "title": "Richard Shelby accepts electoral college vote; ‘it’s time to move on’ - al.com",
+        "urlToImage": "https://www.al.com/resizer/hGAU9v81Rrum6bhL6Lg6-8E2dog=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/JD47YJVSOJANFNBAMIELLDQDCU.jpg",
+        "topic": "general",
+        "url": "https://www.al.com/news/2020/12/richard-shelby-accepts-electoral-college-vote-its-time-to-move-on.html",
+        "author": "John Sharp | jsharp@al.com",
+        "source": "AL.com"
+    },
+    {
+        "topic": "general",
+        "source": "CNET",
+        "title": "HBO Max, Roku strike deal at last (yes, you'll be able to stream Wonder Woman 1984) - CNET",
+        "description": "Roku, maker of some of the most popular streaming devices in the US, has never supported HBO Max's app. That changes tomorrow.",
+        "url": "https://www.cnet.com/news/hbo-max-roku-strike-deal-at-last-yes-you-can-stream-wonder-woman-1984/",
+        "urlToImage": "https://cnet1.cbsistatic.com/img/anwXZg1DquSloewNvcnjJageE7c=/1200x630/2020/06/14/9486c8a0-3bef-4d10-a756-b082d75f4acb/hbo-max-logo-phone-2766.jpg",
+        "author": "Joan E. Solsman"
+    },
+    {
+        "url": "https://nypost.com/2020/12/16/how-mlbs-negro-leagues-decision-affects-record-book/",
+        "source": "New York Post",
+        "topic": "general",
+        "author": "Peter Botte",
+        "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2020/12/In-this-Aug.-2-1942-file-photo-Kansas-City-Monarchs-pitcher-Leroy-Satchel-Paige-warms-up-at-New-Yorks-Yankee-Stadium-before-a-Negro-League-game-between-the-Monarchs-and-the-New-York-Cuban-Stars..jpg?quality=90&strip=all&w=1200",
+        "description": "Major League Baseball’s reclassification Wednesday of the Negro Leagues will correct “a longtime oversight in the game’s history” and officially recognize players and statistics from much of that s…",
+        "title": "How MLB's reclassification of the Negro Leagues affects record book - New York Post "
+    },
+    {
+        "author": "Yasmin Anwar",
+        "urlToImage": "https://scx2.b-cdn.net/gfx/news/2020/the16faciale.jpg",
+        "title": "The 16 facial expressions most common to emotional situations worldwide - Phys.org",
+        "description": "Whether at a birthday party in Brazil, a funeral in Kenya or protests in Hong Kong, humans all use variations of the same facial expressions in similar social contexts, such as smiles, frowns, grimaces and scowls, a new study from the University of California…",
+        "topic": "general",
+        "url": "https://phys.org/news/2020-12-facial-common-emotional-situations-worldwide.html",
+        "source": "Phys.Org"
+    },
+    {
+        "author": "Kristin Salaky",
+        "url": "https://www.delish.com/food-news/a34989601/chrissy-teigen-dinner-gwen-stefani-blake-shelton/",
+        "description": "Of course, the food looked AMAZING.",
+        "title": "Chrissy Teigen Made Dinner For Gwen Stefani And Blake Shelton And It Was ‘Kind Of A Big Deal’ - Yahoo Lifestyle",
+        "urlToImage": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pjimage-10-1608131921.jpg?crop=1xw:1xh;center,top&resize=1200:*",
+        "source": "Delish.com",
+        "topic": "general"
+    },
+    {
+        "description": "EL PASO, Texas -- El Paso County Judge Ricardo Samaniego on Wednesday announced a curfew for the Christmas and New Year's holiday periods out of concern over the coronavirus. That curfew will run from 10 p.m. to 5 a.m. nightly from Dec. 23 to 26 and again fro…",
+        "author": "Jim Parker",
+        "topic": "health",
+        "urlToImage": "https://kvia.b-cdn.net/2020/10/samaniego.jpg",
+        "url": "https://kvia.com/news/el-paso/2020/12/16/watch-live-at-5pm-el-paso-county-judge-expected-to-announce-holiday-curfew-due-to-virus/",
+        "title": "El Paso County Judge Samaniego announces holiday curfew due to virus concerns - KVIA El Paso",
+        "source": "KVIA El Paso"
+    },
+    {
+        "urlToImage": "https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/covidsna121620_0.jpg?itok=EsVz84Mx",
+        "topic": "health",
+        "author": null,
+        "description": "Unexpected evidence that SARS-CoV-2 can integrate its genetic material could explain puzzling diagnostic tests in recovered COVID-19 patients",
+        "source": "Science Magazine",
+        "url": "https://www.sciencemag.org/news/2020/12/coronavirus-may-sometimes-slip-its-genetic-material-human-chromosomes-what-does-mean",
+        "title": "The coronavirus may sometimes slip its genetic material into human chromosomes—but what does that mean? - Science Magazine"
+    },
+    {
+        "topic": "health",
+        "title": "Huntsville-based Dynetics gives back to the community this Christmas season - Yellowhammer News",
+        "description": "Dynetics is continuing many community volunteerism and philanthropic traditions this holiday season, even during the challenges of 2020.",
+        "author": "Sean Ross",
+        "urlToImage": "https://s8r5hym581-flywheel.netdna-ssl.com/wp-content/uploads/2020/12/Dynetics-Charity-Holiday.jpg",
+        "url": "https://yellowhammernews.com/huntsville-based-dynetics-gives-back-to-the-community-this-christmas-season/",
+        "source": "Yellowhammer News"
+    },
+    {
+        "description": "For months, the world’s dealt with the fear and effects of a novel virus that’s easily spread and has killed over 11,000 in Michigan alone.",
+        "url": "https://www.woodtv.com/covid-19-vaccine/spectrum-gloves-not-worn-during-vaccinations-within-guidelines/",
+        "topic": "health",
+        "urlToImage": "https://www.woodtv.com/wp-content/uploads/sites/51/2020/12/Vaccine-first-05.jpg?w=1280",
+        "author": "Joe LaFurgey",
+        "source": "WOODTV.com",
+        "title": "Spectrum: Gloves not worn during vaccinations within guidelines - WOODTV.com"
+    },
+    {
+        "topic": "health",
+        "description": "Los Angeles County has once again shattered its daily record for new coronavirus cases and deaths, as officials warn that vaccine shipments are not coming fast enough to stop hospitals from being stretched to their limits right now.",
+        "author": "By ABC7.com staff",
+        "source": "KABC-TV",
+        "urlToImage": "https://cdn.abcotvs.com/dip/images/8828920_5334.jpg?w=1600",
+        "url": "https://abc7.com/la-covid-los-angeles-covid-19-coronavirus-county-hospitals/8827741",
+        "title": "Los Angeles County again breaks records for COVID-19 deaths and cases as hospitals strained to limits - KABC-TV"
+    },
+    {
+        "author": "WKYT News Staff",
+        "urlToImage": "https://gray-wkyt-prod.cdn.arcpublishing.com/resizer/yx-97cGFo0Xf74mpa8hzz33Bb10=/980x0/smart/cloudfront-us-east-1.images.arcpublishing.com/gray/DD3KOXJSAFGHLHR6VWVQBZJ57I.JPG",
+        "topic": "health",
+        "title": "Gov. Beshear reports 2,898 new COVID-19 cases; 23 deaths - WKYT",
+        "source": "WKYT",
+        "url": "https://www.wkyt.com/2020/12/16/gov-beshear-reports-2898-new-covid-19-cases-23-deaths/",
+        "description": "Governor Andy Beshear has provided an update on COVID-19 cases."
+    },
+    {
         "author": "HNN Staff",
-        "title": "Reports: Billionaire Larry Ellison takes up full time residence on Lanai - Hawaii News Now",
-        "description": "Ellison co-founded the software giant Oracle and owns about 98% of Lanai.",
-        "url": "https://www.hawaiinewsnow.com/2020/12/14/reports-billionaire-larry-ellison-takes-up-full-time-residence-lanai/",
-        "urlToImage": "https://www.hawaiinewsnow.com/resizer/txjio3fvkI9jM59R59ABVVmzAFI=/1200x0/cloudfront-us-east-1.images.arcpublishing.com/raycom/VY2WMDV3O5BEVGIPESI3EE6CMQ.png"
+        "urlToImage": "https://www.hawaiinewsnow.com/resizer/_7AoaPKmkWfLAZQHI_cbjet5-wo=/1200x0/cloudfront-us-east-1.images.arcpublishing.com/raycom/N6EMWZRYNVC5HA4N56Q4P33IPI.jpg",
+        "description": "All four of the deaths were reported to be among Oahu residents. Health officials also reported 110 new COVID-19 infections across the state.",
+        "topic": "health",
+        "url": "https://www.hawaiinewsnow.com/2020/12/16/new-deaths-new-covid-cases-reported-hawaii/",
+        "source": "Hawaii News Now",
+        "title": "4 new deaths, 110 new COVID-19 cases reported in Hawaii - Hawaii News Now"
     },
     {
+        "description": "Gov. Doug Ducey pleaded with Arizonans on Wednesday to get the coronavirus vaccine when it becomes available to them as infections continue to surge.",
+        "source": "KTAR.com",
+        "urlToImage": "https://ktar.com/wp-content/uploads/2020/12/ducey-presser.jpg",
+        "title": "Ducey pleads with Arizonans to get coronavirus vaccine when available - KTAR.com",
+        "url": "https://ktar.com/story/3755422/ducey-pleads-with-arizonans-to-get-coronavirus-vaccine-when-available/",
+        "author": "",
+        "topic": "health"
+    },
+    {
+        "urlToImage": "https://s.yimg.com/uu/api/res/1.2/fvpkkvm0x1XFt1zFllHaDg--~B/aD01MzM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/1e1c4042288a745d7674ae39b60c875a",
+        "url": "https://news.yahoo.com/peru-says-chinas-sinopharm-may-212046820.html",
+        "description": "The Peruvian health minister said on Wednesday that China's Sinopharm could resume a trial for its coronavirus vaccine in the hard-hit Andean nation, just...",
+        "source": "Yahoo Entertainment",
+        "author": "Reuters",
+        "title": "Peru says China's Sinopharm may resume coronavirus vaccine trial after volunteer's illness - Yahoo News",
+        "topic": "health"
+    },
+    {
+        "author": "Zoe Christen Jones",
+        "topic": "health",
+        "description": "The healthcare worker, who had no previous history of allergic reactions, is now stable.",
+        "source": "CBS News",
+        "title": "Alaska health care worker has serious allergic reaction after taking Pfizer's COVID-19 vaccine - CBS News",
+        "urlToImage": "https://cbsnews2.cbsistatic.com/hub/i/r/2020/12/16/7fb290cf-f270-4d8a-a953-c556ea6d9279/thumbnail/1200x630/45a2d79ef7a2dc09152878dd8f070294/gettyimages-1230146706.jpg",
+        "url": "https://www.cbsnews.com/news/covid-vaccine-allergic-reaction-alaska-health-care-worker/"
+    },
+    {
+        "url": "https://vitals.lifehacker.com/how-mrna-vaccines-work-1845895792",
+        "topic": "health",
+        "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/i3izugpc9sze7tpxs09g.jpg",
+        "description": "The first COVID vaccine to be rolled out in the U.S., the one from Pfizer and BioNTech, is an mRNA vaccine. The second one probably will be too: Moderna’s vaccine is up for consideration this week. We’ve never had an mRNA vaccine in common use before, so you’…",
+        "title": "How mRNA Vaccines Work - Lifehacker",
+        "author": "Beth Skwarecki",
+        "source": "Lifehacker.com"
+    },
+    {
+        "url": "https://www.cnbc.com/2020/12/16/twitter-will-label-remove-misinformation-about-covid-19-vaccines.html",
+        "urlToImage": "https://image.cnbcfm.com/api/v1/image/106560338-1591033311108gettyimages-1134474983.jpeg?v=1593534733",
+        "title": "Twitter will label and remove misinformation about Covid-19 vaccines - CNBC",
+        "topic": "health",
+        "source": "CNBC",
+        "description": "Twitter on Wednesday announced that it will moderate and in some cases remove content that spreads harmful misinformation about the Covid-19 vaccines.",
+        "author": "Salvador Rodriguez"
+    },
+    {
+        "topic": "health",
+        "author": "Dan Petrella",
+        "title": "Illinois and nation’s next two shipments of Pfizer COVID-19 vaccine cut in half by federal government, Pritzker says - Chicago Tribune",
+        "source": "Chicago Tribune",
+        "urlToImage": "https://www.chicagotribune.com/resizer/vnbMZ2RhCeDxjWi2U1MXpKLWEI8=/1200x0/top/cloudfront-us-east-1.images.arcpublishing.com/tronc/6BBS6L55MDODKNIKO2MF324C6M.jpg",
+        "description": "The next two shipments of the new Pfizer coronavirus vaccine to Illinois and other states have been significantly reduced by the federal government, Gov. J.B. Pritzker said Wednesday.",
+        "url": "https://www.chicagotribune.com/coronavirus/ct-coronavirus-illinois-pritzker-vaccine-20201216-ekcbgukrzjev7ftzsr4l4ubpii-story.html"
+    },
+    {
+        "url": "https://www.usatoday.com/story/news/health/2020/12/15/pfizer-moderna-covid-vaccine-trials-and-bells-palsy-what-it/3904994001/",
+        "urlToImage": "https://www.gannett-cdn.com/presto/2020/12/15/USAT/e487d935-4e8c-4331-b91b-1ad9410a6f1e-GettyImages-1205897587.jpg?crop=5999,3375,x0,y305&width=3200&height=1680&fit=bounds",
+        "source": "USA Today",
+        "topic": "health",
+        "author": "Adrianna Rodriguez",
+        "title": "COVID-19 vaccine trials report cases of brief facial paralysis. That's not as scary as it sounds. - msnNOW",
+        "description": "A condition that could result in a droopy face may sound scary, but experts say Bell’s palsy is more common and less severe than people think."
+    },
+    {
+        "topic": "health",
+        "title": "Coronavirus in Wisconsin: Testing down, death rate up - WSAW",
+        "description": "For a third straight day, Wisconsin received fewer than 10,000 test results.",
+        "url": "https://www.wsaw.com/2020/12/16/coronavirus-in-wisconsin-testing-down-death-rate-up/",
+        "urlToImage": "https://gray-wsaw-prod.cdn.arcpublishing.com/resizer/tYE2TWJhZNhhBQLr_HjJYxLgSvc=/980x0/smart/cloudfront-us-east-1.images.arcpublishing.com/gray/AHKKQDLQBNEJ3LVXABJ3EKI5IE.png",
+        "author": "WBAY news staff",
+        "source": "WSAW"
+    },
+    {
+        "author": "Jessica Napoli",
+        "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2020/07/Oliver-Stone.jpg",
+        "url": "https://www.foxnews.com/entertainment/oliver-stone-taken-russian-coronavirus-vaccine",
+        "title": "Director Oliver Stone reveals he's taken Russian coronavirus vaccine: 'I've heard good things' - Fox News",
+        "topic": "health",
+        "description": "The filmmaker said he needs to get a second shot in about 45 days.",
+        "source": "Fox News"
+    },
+    {
+        "title": "South Carolina releases vaccine update, latest case numbers for Dec. 16, 2020 - WYFF4 Greenville",
+        "urlToImage": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/covid-vaccine-1606920295.jpg?crop=1.00xw:0.846xh;0,0&resize=1200:*",
+        "source": "WYFF4 Greenville",
+        "url": "https://www.wyff4.com/article/south-carolina-release-vaccine-update-latest-case-numbers-for-dec-16-2020/34992493",
+        "author": null,
+        "description": "South Carolina has received a total of 42,900 Pfizer vaccines as of Wednesday",
+        "topic": "health"
+    },
+    {
+        "url": "http://gothamist.com/news/covid-19-vaccinations-begin-elmhurst-hospital-once-epicenter-nycs-pandemic",
+        "description": "\"It feels like the first bit of sunlight in the morning after a very dark and frightening night.\"",
+        "title": "COVID-19 Vaccinations Begin At Elmhurst Hospital, Once The Epicenter Of NYC's Pandemic - Gothamist",
+        "author": "Elizabeth Kim",
+        "topic": "health",
+        "urlToImage": "https://cms.prod.nypr.digital/images/315750/fill-1200x650/",
+        "source": "Gothamist"
+    },
+    {
+        "topic": "health",
+        "source": "New York Times",
+        "author": "Gina Kolata",
+        "url": "https://www.nytimes.com/2020/12/16/health/prostate-cancer-scan.html",
+        "urlToImage": "https://static01.nyt.com/images/2020/12/16/science/16PROSTATE-promo/16PROSTATE-promo-facebookJumbo.jpg",
+        "description": "The test seems likely to improve the diagnosis and treatment of a disease that kills 33,000 American men each year.",
+        "title": "New Scan Finds Prostate Cancer Cells Hiding in the Body - The New York Times"
+    },
+    {
+        "urlToImage": "https://storage.googleapis.com/afs-prod/media/0844c39ca23e466aa40430d00ec2871b/3000.jpeg",
+        "source": "Associated Press",
+        "url": "https://apnews.com/article/coronavirus-pandemic-colorado-prisons-dfd8ecbe7e51ed5057933e293ac19f05",
+        "description": "DENVER (AP) — Amber Johnson is terrified her 63-year-old father will get the coronavirus. He has high blood pressure, asthma and is pre-diabetic, and she worries he's especially vulnerable as an...",
+        "title": "Inmates facing big virus risks not near top of vaccine lists - Associated Press",
+        "author": "Colleen Slevin",
+        "topic": "health"
+    },
+    {
+        "topic": "science",
+        "source": "Teslarati",
+        "author": "https://www.facebook.com/13ericralph31",
+        "title": "Watch SpaceX’s last launch and landing of 2020 live [webcast] - Teslarati",
+        "url": "https://www.teslarati.com/spacex-falcon-9-spysat-mission-last-launch-2020/",
+        "description": "Update: Despite no plans for a preflight static fire, SpaceX remains on track to attempt its last launch and landing of 2020 as early as 9 am EST (14:00 UTC), Thursday, December 17th. After performing a routine preflight wet dress rehearsal (WDR) and booster …",
+        "urlToImage": "https://www.teslarati.com/wp-content/uploads/2020/12/NROL-108-Falcon-9-B1059-Pad-39A-121620-SpaceX-vertical-1-crop-1024x497.jpg"
+    },
+    {
+        "author": "Elizabeth Howell",
+        "url": "https://www.space.com/canadian-astronauts-artemis-moon-missions",
+        "source": "Space.com",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/BupVfi64bPD97aAZD3YSGQ-1200-80.jpg",
+        "description": "The first one is scheduled to launch in 2023.",
+        "topic": "science",
+        "title": "Canadian astronauts will start flying to the moon in 2023 with NASA's Artemis missions - Space.com"
+    },
+    {
+        "source": "Phys.Org",
+        "author": "Yasmin Anwar",
+        "description": "Whether at a birthday party in Brazil, a funeral in Kenya or protests in Hong Kong, humans all use variations of the same facial expressions in similar social contexts, such as smiles, frowns, grimaces and scowls, a new study from the University of California…",
+        "urlToImage": "https://scx2.b-cdn.net/gfx/news/2020/the16faciale.jpg",
+        "title": "The 16 facial expressions most common to emotional situations worldwide - Phys.org",
+        "url": "https://phys.org/news/2020-12-facial-common-emotional-situations-worldwide.html",
+        "topic": "science"
+    },
+    {
+        "author": "Jennifer Hauser and Zamira Rahim, CNN",
+        "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/201216152219-01-change-5-lunar-probe-landing-1216-super-tease.jpg",
+        "description": "China has become only the third country in the world to successfully collect rocks from the moon.",
+        "topic": "science",
+        "title": "China's Chang'e-5 lunar probe successfully delivers moon samples to Earth - CNN",
+        "url": "https://www.cnn.com/2020/12/16/asia/china-lunar-probe-intl/index.html",
+        "source": "CNN"
+    },
+    {
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/ieR3GLXRvVwE8iQKVLnkUS-1200-80.jpg",
+        "topic": "science",
+        "source": "Live Science",
+        "title": "Two strange blobs of X-ray energy are swirling out of the galaxy's center - Livescience.com",
+        "author": "Brandon Specktor",
+        "url": "https://www.livescience.com/erosita-x-ray-bubbles.html",
+        "description": "These newly-discovered orbs are more than 45,000 light-years wide — but what created them?"
+    },
+    {
+        "topic": "science",
+        "description": "The organisms' expanded range may be due to increased temperatures from climate change.",
+        "source": "Live Science",
+        "url": "https://www.livescience.com/brain-eating-amoeba-expanded-range-northern-united-states.html",
+        "author": "Rachael Rettner",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/xHqNnm52JzFjUnsNCLMAoS-1200-80.jpg",
+        "title": "Deadly 'brain-eating amoeba' has expanded its range northward - Livescience.com"
+    },
+    {
+        "url": "https://futurism.com/the-byte/cornell-radio-signal-exoplanet",
+        "author": null,
+        "urlToImage": "https://wp-assets.futurism.com/2020/12/scientists-found-radio-signal-exoplanet-768x403.jpg",
+        "source": "Futurism",
+        "topic": "science",
+        "title": "Cornell Scientists Find Radio Signal Coming From an Exoplanet - Futurism",
+        "description": "It's probably not aliens, but it could help us find potentially-habitable worlds."
+    },
+    {
+        "source": "Phys.Org",
+        "author": "Science X staff",
+        "description": "Australia's east coast is littered with the remnants of hundreds of volcanoes—the most recent just a few thousand years old—and scientists have been at a loss to explain why so many eruptions have occurred over the past 80 million years.",
+        "title": "Secret of Australia's volcanoes revealed in new study - Phys.org",
+        "urlToImage": "https://scx2.b-cdn.net/gfx/news/hires/2020/secretofaust.jpg",
+        "topic": "science",
+        "url": "https://phys.org/news/2020-12-secret-australia-volcanoes-revealed.html"
+    },
+    {
+        "topic": "science",
+        "source": "NASA",
+        "description": "President Donald Trump has issued a new Space Policy Directive that will help propel NASA and humanity’s next giant leap – creating a sustainable presence on the Moon and sending astronauts to Mars.",
+        "title": "NASA Supports America's National Strategy for Space Nuclear Power and - NASA",
+        "author": null,
+        "urlToImage": "http://www.nasa.gov/sites/default/files/thumbnails/image/nep_mars_no_planets_0.png",
+        "url": "https://www.nasa.gov/press-release/nasa-supports-americas-national-strategy-for-space-nuclear-power-and-propulsion/"
+    },
+    {
+        "title": "Scientists are fascinated by bizarre dinosaur find | TheHill - The Hill",
+        "url": "https://thehill.com/changing-america/sustainability/environment/530503-scientists-are-fascinated-by-bizarre-dinosaur",
+        "description": "Ubirajara jubatus donned a mane of long fur down its back and stiff ribbons — likely made of keratin — protruding out and back from its shoulders.",
         "source": "The Hill",
-        "author": "Joseph Choi",
-        "title": "Russian spy agents found to be near Navalny before poisoning: report | TheHill - The Hill",
-        "description": "Russian spies with knowledge of poisons were near opposition lead...",
-        "url": "https://thehill.com/homenews/news/530208-russian-spy-agents-found-to-be-near-navalny-before-poisoning-report",
-        "urlToImage": "https://thehill.com/sites/default/files/navalnyalexei_082020getty.jpg"
+        "topic": "science",
+        "urlToImage": "https://thehill.com/sites/default/files/ca_dinodiscovery_121620.jpg",
+        "author": "Joseph Guzman"
     },
     {
+        "title": "Watch a swarm of drones fly through heavy forest—while staying in formation - Science Magazine",
+        "topic": "science",
+        "author": null,
+        "source": "Science Magazine",
+        "url": "https://www.sciencemag.org/news/2020/12/watch-swarm-drones-fly-through-heavy-forest-while-staying-formation",
+        "description": "Approach could speed up search and rescue missions and forest surveys",
+        "urlToImage": "https://www.sciencemag.org/sites/default/files/swarm-thumb.png"
+    },
+    {
+        "urlToImage": "http://www.nasa.gov/sites/default/files/thumbnails/image/pia22743-1041.jpg",
+        "url": "https://www.nasa.gov/feature/jpl/3-things-weve-learned-from-nasas-mars-insight/",
+        "author": null,
+        "topic": "science",
+        "description": "Scientists are finding new mysteries since the geophysics mission landed two years ago.",
+        "title": "3 Things We've Learned From NASA's Mars InSight - NASA",
+        "source": "NASA"
+    },
+    {
+        "author": "Rafi Letzter",
+        "source": "Live Science",
+        "description": "",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/EAgmufyKiERj7bzGXsAyBY-1200-80.jpg",
+        "url": "https://www.livescience.com/decaying-yemeni-oil-tanker.html",
+        "topic": "science",
+        "title": "Red Sea oil tanker 4 times as big as Exxon Valdez could spill any day now - Livescience.com"
+    },
+    {
+        "author": "Eric Berger",
+        "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2020/12/50725072431_7bc93ca7bd_k-760x380.jpg",
+        "topic": "science",
+        "source": "Ars Technica",
+        "title": "Astra set up a rocket launch with five people and came within seconds of orbit - Ars Technica",
+        "url": "https://arstechnica.com/science/2020/12/astra-set-up-a-rocket-launch-with-five-people-and-came-within-seconds-of-orbit/",
+        "description": "\"It's a really nice Christmas present for the team.\""
+    },
+    {
+        "url": "https://www.popularmechanics.com/science/environment/a34980813/human-made-space-barrier-around-earth/",
+        "description": "The kicker? It's actually saving us.",
+        "author": "Caroline Delbert",
+        "title": "Whoops, Humans Made a Space Barrier Around Earth - Yahoo Tech",
+        "source": "Popular Mechanics",
+        "topic": "science",
+        "urlToImage": "https://s.yimg.com/uu/api/res/1.2/jM7.uoK9pdeJ23cJQITb8Q--~B/aD03MjA7dz0xNDQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/popular_mechanics_642/4e1ec15b3a1324a20e277067adaec9aa"
+    },
+    {
+        "url": "https://www.zdnet.com/article/quantum-computing-strings-of-ultracold-atoms-reveal-the-surprising-behavior-of-quantum-particles/",
+        "author": "Daphne Leprince-Ringuet",
+        "description": "Atoms brought down to freezing temperatures and exposed to a magnetic field showed interesting patterns of behavior, according to MIT scientists.",
+        "title": "Quantum computing: Strings of ultracold atoms reveal the surprising behavior of quantum particles - ZDNet",
+        "urlToImage": "https://zdnet3.cbsistatic.com/hub/i/r/2019/09/24/4ca1f4fc-265b-4fb6-be2d-f6d66e4fee76/thumbnail/770x578/68fed3e0d47fc2f63e7a5879a65950b1/quantumphysicsistock40516238agsandrew1.jpg",
+        "source": "ZDNet",
+        "topic": "science"
+    },
+    {
+        "urlToImage": "https://www.oregonlive.com/resizer/huQvV8EdXGFfOxHg9MUMKroLDYA=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/CEBYR6ITKVFJJFUHCVMZHSRWEM.jpg",
+        "description": "Hoping to see what some are calling the “Christmas star” from Portland? Here's what you need to know about the close conjunction of the two largest planets in our solar system.",
+        "topic": "science",
+        "author": "Jamie Hale | The Oregonian/OregonLive",
+        "source": "OregonLive",
+        "url": "https://www.oregonlive.com/entertainment/2020/12/how-to-watch-jupiter-and-saturns-historic-great-conjunction-of-2020.html",
+        "title": "How to watch Jupiter and Saturn’s historic great conjunction of 2020 - OregonLive"
+    },
+    {
+        "author": null,
+        "description": "Raja Chari, 43, is a colonel in the US Air Force. He will be the commander of SpaceX Crew-3 mission that is expected to be launched next year.",
+        "topic": "science",
+        "source": "India Today",
+        "title": "Nasa selects Indian-American Raja Chari as commander of SpaceX Crew-3 mission - India Today",
+        "urlToImage": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202012/raja_chari-647x363.png?CmY6.tNa2MTXEBIZqyGuQiil86.PPWo8",
+        "url": "https://www.indiatoday.in/world/story/nasa-selects-indian-american-raja-chari-as-commander-of-spacex-crew-3-mission-1750209-2020-12-16"
+    },
+    {
+        "author": "Science X staff",
+        "description": "Together with his colleague Hussam Zaher of the University in São Paulo, Senckenberg scientist Krister Smith described the world's oldest known fossils of a python. The almost completely preserved snakes with a length around one meter were discovered in the U…",
+        "title": "World's earliest python identified from 47 million-year-old fossil remains - Phys.org",
+        "urlToImage": "https://scx2.b-cdn.net/gfx/news/hires/2020/5fd9faf719a8d.jpg",
+        "url": "https://phys.org/news/2020-12-world-earliest-python-million-year-old-fossil.html",
+        "source": "Phys.Org",
+        "topic": "science"
+    },
+    {
+        "description": "Although scientists have yet to find the elusive Planet 9, a recently discovered exoplanet in deep space may provide further evidence the mysterious celestial object indeed exists.",
+        "title": "Mysterious Planet Nine discovery may be forthcoming after bizarre exoplanet found in deep space - Fox News",
+        "url": "https://www.foxnews.com/science/planet-nine-discovery-forthcoming-bizarre-exoplanet-found",
+        "author": "Chris Ciaccia",
+        "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2020/12/heic2021a.jpg",
+        "topic": "science",
+        "source": "Fox News"
+    },
+    {
+        "url": "https://www.freep.com/story/sports/college/michigan-state/spartans/2020/12/16/michigan-state-football-recruiting-mel-tucker-strategy/3934364001/",
+        "description": "Mel Tucker's first recruiting signing day with Michigan State was notable for a number of reasons, including who did not sign with Spartans",
+        "urlToImage": "https://www.gannett-cdn.com/presto/2020/11/14/PDTF/fb660dc1-01d8-44b8-be0c-57261741d4e9-11142020_msu1sthalf_jh-21.jpg?crop=2399,1349,x0,y0&width=1600&height=800&fit=bounds",
+        "author": "Chris Solari",
+        "title": "Mel Tucker shows he is retooling Michigan State football's recruiting strategies - Detroit Free Press",
+        "topic": "sports",
+        "source": "Detroit Free Press"
+    },
+    {
+        "topic": "sports",
+        "title": "Jim Harbaugh Breaks Down Offensive Signees - Rivals.com - Michigan",
+        "url": "https://michigan.rivals.com/news/michigan-wolverines-football-harbaugh-breaks-down-signees-on-offense",
+        "author": null,
+        "source": "Rivals.com",
+        "urlToImage": "https://images.rivals.com/image/upload/f_auto,q_auto,t_headline_primary/kjgetornvuc7o9fujw1l",
+        "description": "Michigan has inked a top 10 class in the early signing period, and head coach Jim Harbaugh couldn’t be happier."
+    },
+    {
+        "title": "Mitchell Trubisky says Bears offense is doing things he's been asking for - Chicago Bears Wire",
+        "author": "Alyssa Barbieri",
+        "source": "USA Today",
+        "topic": "sports",
+        "url": "https://bearswire.usatoday.com/2020/12/16/chicago-bears-offense-mitchell-trubisky-asked-coaches-strengths/",
+        "urlToImage": "https://bearswire.usatoday.com/wp-content/uploads/sites/63/2020/12/USATSI_15310488.jpg?w=1024&h=576&crop=1",
+        "description": "Bears QB Mitchell Trubisky said the offense is finally doing things he’s been asking them to do, which has led to success for the unit."
+    },
+    {
+        "topic": "sports",
+        "urlToImage": "https://images.rivals.com/image/upload/f_auto,q_auto,t_headline_primary/e1mypqrsv9qdbykqj61g",
+        "url": "https://notredame.rivals.com/news/notre-dame-2021-signing-day-five-primary-talking-points",
+        "author": null,
+        "source": "Rivals.com",
+        "title": "Notre Dame 2021 Signing Day: Five Primary Talking Points - Irish Illustrated",
+        "description": "Running back questions, top-10 ranking, going virtual, some surprises highlight early signing period."
+    },
+    {
+        "description": "We’ve reached conference championship weekend in college football, and BetMGM has already seen heavy betting action with the games still a few days away.",
+        "source": "Yahoo Entertainment",
+        "author": "Sam Cooper",
+        "urlToImage": "https://s.yimg.com/ny/api/res/1.2/GFvxAFMJTjgTmgyI0lrk_w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTIwMDA7aD0xMzMz/https://s.yimg.com/os/creatr-uploaded-images/2020-12/5a13b230-4000-11eb-aabb-6e1962a2a2d5",
+        "topic": "sports",
+        "title": "NCAA football betting: Public money 'flowing in' on Alabama, Notre Dame in conference title games - Yahoo Sports",
+        "url": "https://sports.yahoo.com/ncaa-football-betting-public-money-flowing-in-on-alabama-notre-dame-in-conference-title-games-003916908.html"
+    },
+    {
+        "topic": "sports",
+        "author": "Joel Sherman",
+        "description": "This holiday season, Brian Cashman is the regifter. For if you are a Yankees fan, you better have liked the 2020 fell-short-again Yankees. Because Plan A is to put a bow on it and give it to you ag…",
+        "title": "Yankees taking huge chance with familiar 2021 plan: Sherman - New York Post ",
+        "url": "https://nypost.com/2020/12/16/yankees-taking-huge-chance-with-familiar-2021-plan-sherman/",
+        "source": "New York Post",
+        "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2020/03/1212025693.jpg?quality=90&strip=all&w=1200"
+    },
+    {
+        "source": "DawgNation",
+        "url": "https://www.dawgnation.com/football/georgia-uga-football-bulldogs-kirby-class-cuts-returners",
+        "urlToImage": "https://res.cloudinary.com/dawgnation/image/upload/c_crop,g_north_west,h_1422,w_2696,x_0,y_77/f_auto,q_auto/h_624,w_1183/v1604786196/Kirby-Smart-pregame-vs.-Florida_sf8m0s.jpg",
+        "topic": "sports",
+        "description": "ATHENS — Kirby Smart said he knows he’s supposed to say Georgia football met all of its needs with Wednesday’s haul of 20 early signees, but the head coach knows...",
+        "title": "Georgia's No. 3-ranked 2021 class hits needs, more work and attrition ahead - DawgNation",
+        "author": "Mike Griffith"
+    },
+    {
+        "topic": "sports",
+        "title": "USC RB Vavae Malepeai unlikely to play in Pac-12 title game - ESPN",
+        "description": "Leading rusher Vavae Malepeai is unlikely to play for No. 13 USC in the Pac-12 championship game against Oregon on Friday night.",
+        "source": "ESPN",
+        "author": null,
+        "urlToImage": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2018%2F0921%2Fr434851_1296x729_16%2D9.jpg",
+        "url": "https://www.espn.com/college-football/story/_/id/30534462/no-13-usc-rb-malepeai-unlikely-play-pac-12-title-game"
+    },
+    {
+        "url": "https://www.espn.com/nba/story/_/id/30534461/supermax-signed-giannis-antetokounmpo-sets-sights-winning-championship-milwaukee-bucks",
+        "source": "ESPN",
+        "urlToImage": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2020%2F1217%2Fr791290_1296x729_16%2D9.jpg",
+        "description": "One day after signing a supermax extension with the Bucks, back-to-back NBA MVP Giannis Antetokounmpo reflected on his goals for the next five years: \"Have kids and to have a championship. That's all I want.\"",
+        "topic": "sports",
+        "title": "Supermax signed, Giannis Antetokounmpo sets sights on winning a championship with Milwaukee Bucks - ESPN",
+        "author": "Eric Woodyard"
+    },
+    {
+        "title": "Huskers extend offer to son of former NU All-American - 247Sports",
+        "author": "Brian Christopherson",
+        "source": "247Sports",
+        "topic": "sports",
+        "url": "https://247sports.com/college/nebraska/Article/Nebraska-Huskers-recruiting-2023-class-Maverick-Noonan-son-of-Danny-Noonan--157121125/",
+        "urlToImage": "https://s3media.247sports.com/Uploads/Assets/906/655/9655906.jpg?fit=bounds&crop=1200:630,offset-y0.50&width=1200&height=630",
+        "description": "."
+    },
+    {
+        "description": "ESPN FC’s Craig Burley, Frank Leboeuf and Jürgen Klinsmann join Dan Thomas to react to Liverpool last-gasp 2-1 win over Premier League title rivals Tottenham...",
+        "source": "YouTube",
+        "url": "https://www.youtube.com/watch?v=fNgJqx2GdEA",
+        "title": "I hope this annoys people … I enjoy watching Tottenham more than Liverpool! – Craig Burley | ESPN FC - ESPN UK",
+        "topic": "sports",
+        "urlToImage": "https://i.ytimg.com/vi/fNgJqx2GdEA/maxresdefault.jpg",
+        "author": null
+    },
+    {
+        "urlToImage": "https://www.cleveland.com/resizer/S3BT8RTV7Ps93BU4_RO35uWmEtk=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/YAUINTFGZJAYDL6NUL65UDODVE.JPG",
+        "description": "Baker Mayfield answered questions from the media following Wednesday's Browns practice in Berea.",
+        "title": "Baker Mayfield discusses Odell Beckham Jr., Colt McCoy in conference call: Transcipt - cleveland.com",
+        "topic": "sports",
+        "url": "https://www.cleveland.com/browns/2020/12/baker-mayfield-discusses-odell-beckham-jr-colt-mccoy-in-conference-call-transcipt.html",
+        "source": "cleveland.com",
+        "author": "Scott Patsko, cleveland.com"
+    },
+    {
+        "author": null,
+        "description": "The New England Patriots received a shot of adrenaline Wednesday in the form of wide receiver Julian Edelman.",
+        "title": "How Julian Edelman Looked On First Day Back At Patriots Practice - NESN",
+        "topic": "sports",
+        "url": "https://nesn.com/2020/12/how-julian-edelman-looked-on-first-day-back-at-patriots-practice/",
+        "urlToImage": "https://nesn.com/wp-content/uploads/sites/5/2020/11/Julian-Edelman-4.jpg",
+        "source": "NESN"
+    },
+    {
+        "urlToImage": "https://cdn.vox-cdn.com/thumbor/obb6j5R3TYPB_Iw0M7hY30KFaEs=/0x0:2000x1047/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/8262895/205_Glover_Teixeria_vs_Anthony_Johnson.0.jpg",
+        "topic": "sports",
+        "source": "MMA Fighting",
+        "description": "Anthony “Rumble” Johnson details how he ultimately exited the UFC and made the decision to sign with Bellator MMA after making the decision to return from retirement.",
+        "url": "https://www.mmafighting.com/2020/12/16/22179248/anthony-rumble-johnson-explains-how-he-ended-up-bellator-mma-adamant-theres-no-bad-blood-with-ufc",
+        "author": "Damon Martin",
+        "title": "Anthony ‘Rumble’ Johnson explains Bellator MMA signing, adamant there’s no bad blood with UFC - MMA Fighting"
+    },
+    {
+        "author": null,
+        "topic": "sports",
+        "url": "https://www.saturdaydownsouth.com/alabama-football/alabama-football-recruiting-5-takeaways-from-yet-another-no-1-recruiting-class/",
+        "title": "Alabama football recruiting: 5 takeaways from yet another No. 1 recruiting class - Saturday Down South",
+        "urlToImage": "https://www.saturdaydownsouth.com/wp-content/uploads/2020/10/USATSI_15050907-1-e1603295730565-1200x628.jpg",
+        "source": "Saturday Down South",
+        "description": "Nick Saban did it again. He flipped key targets and landed 6 5-star standouts. All part of another No. 1-ranked recruiting class."
+    },
+    {
+        "source": "Detroit Free Press",
+        "url": "https://www.freep.com/story/sports/nfl/lions/2020/12/16/detroit-lions-dandre-swift-concussion-tennessee-titans-derrick-henry/3930035001/",
+        "author": "Carlos Monarrez",
+        "urlToImage": "https://www.gannett-cdn.com/presto/2020/12/13/PDTF/97057d7e-5a4e-47e5-a6ee-787b47460eb9-GTY_1291082298.jpg?crop=3443,1937,x0,y0&width=3200&height=1680&fit=bounds",
+        "title": "Detroit Lions’ D’Andre Swift not sure if he had a concussion; rooting for Derrick Henry - Detroit Free Press",
+        "description": "Detroit Lions running back D’Andre Swift still isn't sure if he had a concussion. He's rooting for the Titans' Derrick Henry to break rushing record.",
+        "topic": "sports"
+    },
+    {
+        "topic": "sports",
+        "description": "J.K. Dobbins is set to be the next rookie RB star.",
+        "urlToImage": "https://sportshub.cbsistatic.com/i/r/2020/12/08/c72dd901-81c4-4c20-b5a3-a996928b2fbb/thumbnail/1200x675/0bb4b47bfcd1d9306db22834e76114f8/dobbins-ravens.jpg",
+        "source": "CBS Sports",
+        "url": "https://www.cbssports.com/fantasy/football/news/fantasy-football-week-15-start-em-sit-em-can-j-k-dobbins-be-the-next-rookie-running-back-to-break-out/",
+        "author": "",
+        "title": "Fantasy Football Week 15 Start 'Em & Sit 'Em: Can J.K. Dobbins be the next rookie running back to break out? - CBS Sports"
+    },
+    {
+        "topic": "sports",
+        "description": "Turns out Jeff Van Gundy, who still lives in Houston, was wise not going through with the Rockets’ head-coaching position. Van Gundy, the former Knicks head coach, interviewed there and sources ind…",
+        "url": "https://nypost.com/2020/12/16/jeff-van-gundy-avoided-nbas-biggest-mess-by-rejecting-rockets/",
+        "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2020/12/Jeff-Van-Gundy-Rockets.jpg?quality=90&strip=all&w=1200",
+        "source": "New York Post",
+        "title": "Jeff Van Gundy avoided James Harden mess by staying away from Rockets - New York Post ",
+        "author": "Marc Berman"
+    },
+    {
+        "topic": "sports",
+        "title": "University of Oregon board of trustees to meet Thursday to discuss Mario Cristobal’s contract - OregonLive",
+        "url": "https://www.oregonlive.com/ducks/2020/12/university-of-oregon-board-of-trustees-to-meet-thursday-to-discuss-mario-cristobals-contract.html",
+        "description": "The executive and audit committee of the University of Oregon board of trustees will meet at 10 a.m. Thursday “for purposes regarding an employment contract for the head intercollegiate football coach.”",
         "source": "OregonLive",
         "author": "James Crepea | The Oregonian/OregonLive",
-        "title": "What Mario Cristobal said about Oregon facing USC in Pac-12 Championship game, Auburn rumors - OregonLive",
-        "description": "Follow live updates of Cristobal's press conference",
-        "url": "https://www.oregonlive.com/ducks/2020/12/live-updates-mario-cristobal-discusses-oregon-playing-usc-in-pac-12-championship-game.html",
-        "urlToImage": "https://www.oregonlive.com/resizer/GQtptgs1Vly_ppy0NXRbaSCh7pg=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/7VQLKPWQGJBJBGLW4ZKLPUMDEM.JPG"
+        "urlToImage": "https://www.oregonlive.com/resizer/X2O0I7X-Nj10B7qwqnssU-vg8Pg=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/7YRHIADDTZGPHBVPVEJXYBA65Y.JPG"
     },
     {
-        "source": "The Guardian",
-        "author": "Lauren Gambino",
-        "title": "Biden hails democracy and rebukes Trump after electoral college victory - The Guardian",
-        "description": "The president-elect repudiated Donald Trump and said his assault on the democratic process was ‘unconscionable’",
-        "url": "https://www.theguardian.com/us-news/2020/dec/14/joe-biden-electoral-college-victory-donald-trump",
-        "urlToImage": "https://i.guim.co.uk/img/media/23c9b1fb842fa2b5e44233cdbe5e141e6a293caa/10_0_3480_2090/master/3480.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=84419f8026c25dfd648eeb9de6fd035c"
-    },
-    {
-        "source": "Dallas Sports Fanatic",
-        "author": "https://www.facebook.com/aplinck66",
-        "title": "The Cleveland Indians are dropping their name, are the Texas Rangers next? - Dallas Sports Fanatic",
-        "description": "The Cleveland Indians announced on Sunday night that they would drop the “Indians” nickname and rename their team to a new name TBD. Earlier this year, the previously named Washington Redskins, dropped the “Redskins” team name and for at least the 2020 season…",
-        "url": "https://www.dallassportsfanatic.com/the-cleveland-indians-are-dropping-their-name-are-the-texas-rangers-next/",
-        "urlToImage": "https://www.dallassportsfanatic.com/wp-content/uploads/2019/12/Dallas-Sports-Fanatic-20-of-23.jpg"
-    },
-    {
-        "source": "Politico",
-        "author": "Dan Diamond",
-        "title": "Trump's drug cards clear key hurdle following pressure from White House - POLITICO",
-        "description": "A key panel blessed the president's promised drug-discount cards, surprising even some officials who worked on the plan.",
-        "url": "https://www.politico.com/news/2020/12/14/trump-medicare-drug-cards-445394",
-        "urlToImage": "https://static.politico.com/37/30/430be0e84797af6567fe75744e6a/ap20325734874531-1.jpg"
-    },
-    {
-        "source": "Associated Press",
+        "description": "Kendrick Perkins and Zachh Lowe join Rachel Nichols on The Jump for “Crunch Time” and discuss how many minutes LeBron James and Anthony Davis will play in th...",
+        "topic": "sports",
+        "source": "YouTube",
+        "url": "https://www.youtube.com/watch?v=yAKMelZYFI0",
+        "urlToImage": "https://i.ytimg.com/vi/yAKMelZYFI0/maxresdefault.jpg",
         "author": null,
-        "title": "Elections official threatened amid Trump loss anger - Associated Press",
-        "description": "OLYMPIA, Wash. (AP) — The Washington Secretary of State’s Office has reported a threat made against a worker as efforts continue to intimidate elections officials and politicians for administering...",
-        "url": "https://apnews.com/article/election-2020-donald-trump-olympia-washington-elections-c6b6254625eb261e777c5d403e0ca896",
-        "urlToImage": "https://apnews.com/images/ShareLogo2.png"
+        "title": "2021 All-Star odds: Will Damian Lillard and Jamal Murray make the team in the West? | The Jump - ESPN"
     },
     {
-        "source": "Buzzfeed",
-        "author": "[{\"@type\":\"Person\",\"name\":\"larryfitzmaurice\",\"url\":\"https://www.buzzfeed.com/larryfitzmaurice\",\"jobTitle\":\"BuzzFeed Staff\"}]",
-        "title": "Gwen Stefani Talked About Discovering She Had Dyslexia Along With Her Sons - BuzzFeed",
-        "description": "\"They understand that their brain functions in a different way.\"",
-        "url": "https://www.buzzfeed.com/larryfitzmaurice/gwen-stefani-sons-dyslexia",
-        "urlToImage": "https://img.buzzfeed.com/buzzfeed-static/static/2020-12/15/1/tmp/cbec2487a9ee/tmp-name-2-8595-1607996695-7_dblbig.jpg"
+        "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/qlrtjz3fjoccacsqcdvo.jpg",
+        "topic": "technology",
+        "source": "Gizmodo.com",
+        "url": "https://gizmodo.com/twitch-bans-the-words-simp-and-virgin-actual-simps-and-1845899833",
+        "description": "Twitch announced on Wednesday that the words “simp,” “incel,” and “virgin” will no longer be allowed on the platform as long as they are used by streamers and commenters as insults.",
+        "title": "Twitch Bans the Words 'Simp' and 'Virgin' (Actual Simps And Virgins Still Welcome) - Gizmodo",
+        "author": "Brianna Provenzano"
     },
     {
-        "source": "Yahoo Entertainment",
-        "author": "William Turton",
-        "title": "Hackers Used Obscure Texas IT Vendor to Attack U.S. Agencies - Yahoo Finance",
-        "description": "(Bloomberg) -- At the epicenter of the most sprawling cyber-attack in recent memory is a two-decade-old, Austin, Texas-based software maker called SolarWinds...",
-        "url": "https://finance.yahoo.com/news/hackers-used-obscure-texas-vendor-231008166.html",
-        "urlToImage": "https://s.yimg.com/uu/api/res/1.2/HBEEg2sihZoVG1RxVQTnvA--~B/aD0xMzI3O3c9MjAwMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/bloomberg_technology_68/8c3a159c29a14a7d9aa7ac7890716bea"
+        "source": "9to5Mac",
+        "title": "Apple rebuffs Facebook criticism, says iOS anti-tracking features are about ’standing up for our users’ - 9to5Mac",
+        "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2020/12/FB-ATT.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+        "description": "After a barrage of criticism from Facebook today, Apple is yet again doubling down on its forthcoming App Tracking Transparency feature. The feature will launch to users in 2021, and Apple says it “does not require Facebook to change its approach to tracking …",
+        "topic": "technology",
+        "author": null,
+        "url": "https://9to5mac.com/2020/12/16/apple-facebook-app-tracking-transparency/"
     },
     {
-        "source": "Fox News",
-        "author": "Brian Flood",
-        "title": "Mainstream media ignores sexual harassment allegations against Gov. Andrew Cuomo - Fox News",
-        "description": "New York City politico Lindsey Boylan alleged on Twitter Sunday that New York Gov. Andrew Cuomo \"sexually harassed me for years,\" but anyone who relies on CNN, MSNBC, ABC, NBC or CBS for news would have no idea.",
-        "url": "https://www.foxnews.com/media/mainstream-media-ignores-sexual-harassment-allegations-against-gov-andrew-cuomo",
-        "urlToImage": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/2dc6da55-790e-41a0-bc37-00a00612d842/5b5b1043-3e66-44c3-b2c7-4d83f28a257c/1280x720/match/image.jpg"
+        "title": "Future Snapdragon phones can get up to four years of security updates - Engadget",
+        "url": "https://www.engadget.com/google-qualcomm-snapdragon-project-treble-partnership-000040338.html",
+        "source": "Engadget",
+        "author": "",
+        "urlToImage": "https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-12%2F4c7b2b90-3ff5-11eb-b7ed-9ed7e552f968&client=amp-blogside-v2&signature=1c2a6b6f7f2b45efc2b22097328be43c1393c44d",
+        "description": "A new partnership between Google and Qualcomm will see the two companies work together to improve Project Treble and further simplify the update process for devices that feature a Qualcomm chipset.",
+        "topic": "technology"
     },
     {
+        "url": "https://www.engadget.com/google-photos-adds-maps-timeline-233633756.html",
+        "description": "Since 2015, Google has offered a timeline feature through Maps that allows you to retrace where you were on a specific day in the past. With the latest version of app, you’ll find a new way to see all the photos you took on a given day.",
+        "title": "Google Photos lets you relive a day through your Maps timeline - Engadget",
+        "urlToImage": "https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-12%2F3a102ac0-3fe9-11eb-a7df-3b25ecb9f963&client=amp-blogside-v2&signature=4d9adfa76aedd9e32f09bec6aee4e4b8bccc550d",
+        "topic": "technology",
+        "source": "Engadget",
+        "author": ""
+    },
+    {
+        "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2020/12/cloudready-first-login-760x380.png",
+        "topic": "technology",
+        "url": "https://arstechnica.com/gadgets/2020/12/google-acquired-neverware-makers-of-cloudready-chromeos-variant/",
+        "description": "Google says it will continue to offer the free-as-in-beer Home edition.",
+        "source": "Ars Technica",
+        "author": "Jim Salter",
+        "title": "Google bought CloudReady, the largest ChromiumOS distribution - Ars Technica"
+    },
+    {
+        "topic": "technology",
         "source": "YouTube",
         "author": null,
-        "title": "NES & Super NES - December Game Updates - Nintendo Switch Online - Nintendo",
-        "description": "On December 18, five more games will be added to the Super Nintendo Entertainment System™ – Nintendo Switch Online and Nintendo Entertainment System™ – Ninte...",
-        "url": "https://www.youtube.com/watch?v=n545MB4Y43s",
-        "urlToImage": "https://i.ytimg.com/vi/n545MB4Y43s/maxresdefault.jpg"
+        "urlToImage": "https://i.ytimg.com/vi/ZGqqlmLDrp8/maxresdefault.jpg",
+        "description": "Join our YouTube Membership program for Early Access to videos, badges, emojis, bonus content and more. ►► https://www.youtube.com/channel/UCqg5FCR7NrpvlBWMX...",
+        "url": "https://www.youtube.com/watch?v=ZGqqlmLDrp8",
+        "title": "Yahtzee, Jack & Nick Play Immortals: Fenyx Rising | Post-ZP Stream - The Escapist"
     },
     {
-        "source": "USA Today",
-        "author": "Nick Wojton",
-        "title": "Bills WR Stefon Diggs was never worried vs. Steelers: 'Hell nah' - Bills Wire",
-        "description": "The Buffalo Bills were up 9-7 at the half against the Pittsburgh Steelers on Sunday. Having said that, the game had a pretty bleak outlook for Buffalo. That is, until the Bills (10-3) came out and …",
-        "url": "https://billswire.usatoday.com/2020/12/14/buffalo-bills-stefon-diggs-never-worried-pittsburgh-steelers-hell-nah-josh-allen-dion-dawkins/",
-        "urlToImage": "https://billswire.usatoday.com/wp-content/uploads/sites/65/2020/12/cf7573a15c7f4161b7c4b69ce2f3b6df.jpg?w=1024&h=576&crop=1"
+        "author": "Jeff Grubb",
+        "topic": "technology",
+        "title": "CD Projekt Red risked the reputations of others to insulate Cyberpunk 2077 - VentureBeat",
+        "source": "VentureBeat",
+        "description": "CD Projekt Red is on a rampage that is tearing through its reputation as well as the reputation of its partners and the media.",
+        "urlToImage": "https://venturebeat.com/wp-content/uploads/2020/12/cyberpunk2077-gq-11jun18_b.jpg?w=1200&strip=all",
+        "url": "https://venturebeat.com/2020/12/16/cd-projekt-red-risked-the-reputations-of-others-to-insulate-cyberpunk-2077/"
     },
     {
-        "source": "Business Insider",
-        "author": "Charles Davis",
-        "title": "Barr letter praises Trump, though reports showed relationship strained - Business Insider - Business Insider",
-        "description": "The news of Barr's resignation comes after the long, loyal soldier for the president, broke with Trump over allegations of fraud in the 2020 election.",
-        "url": "https://www.businessinsider.com/barr-letter-praises-trump-though-reports-showed-relationship-strained-2020-12",
-        "urlToImage": "https://i.insider.com/5f6c61bdc4049200115cb4f0?width=1200&format=jpeg"
+        "url": "https://www.npr.org/sections/health-shots/2020/12/16/947226068/dark-skin-can-lead-to-errors-with-pulse-oximeters-used-in-covid-19-treatment",
+        "urlToImage": "https://media.npr.org/assets/img/2020/12/16/pulse_ox_gettyimages-1228423340_wide-3acf503893187d343362947d0fa5abc5eefe96f9.jpg?s=1400",
+        "title": "Devices Used In COVID-19 Treatment Can Give Errors For Patients With Dark Skin - NPR",
+        "topic": "technology",
+        "author": "",
+        "source": "NPR",
+        "description": "Fingertip devices that measure oxygen in the blood can sometimes give erroneous readings in people with dark skin, doctors report. The devices can say oxygen levels are normal when they're not."
     },
     {
-        "source": "Reuters",
-        "author": "Reuters Staff",
-        "title": "Moderna COVID-19 vaccine documents accessed in EMA cyberattack - Reuters",
-        "description": "Moderna Inc said on Monday it was informed by the European Medicines Agency (EMA) certain documents related to pre-submission talks of its COVID-19 vaccine candidate were unlawfully accessed in a cyberattack on the medicines regulator.",
-        "url": "https://www.reuters.com/article/us-ema-cyber-moderna-idUSKBN28P00E",
-        "urlToImage": "https://static.reuters.com/resources/r/?m=02&d=20201215&t=2&i=1544568187&r=LYNXMPEGBE00E&w=800"
+        "url": "https://www.bloomberg.com/tosv2.html?vid=&uuid=e018d1c0-4001-11eb-9af2-1d1718c42750&url=L25ld3MvYXJ0aWNsZXMvMjAyMC0xMi0xNi9wbGF5c3RhdGlvbi01LXNjYWxwZXJzLXVzZS1ib3RzLXRvLWh1bnQtZG93bi1zY2FyY2UtY29uc29sZXM=",
+        "source": "Bloomberg",
+        "description": null,
+        "author": null,
+        "topic": "technology",
+        "title": "PlayStation 5 Scalpers Use Bots to Hunt Down Scarce Consoles - Bloomberg",
+        "urlToImage": null
+    },
+    {
+        "url": "https://www.nasa.gov/press-release/nasa-awards-launch-services-contract-to-blue-origin-for-new-glenn-launch-services/",
+        "source": "NASA",
+        "urlToImage": "http://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb_0.jpg",
+        "title": "NASA Awards Launch Services Contract to Blue Origin for New Glenn Launch Services - NASA",
+        "author": null,
+        "topic": "technology",
+        "description": "NASA has awarded a NASA Launch Services (NLS) II contract to Blue Origin and their New Glenn launch service in accordance with the contract’s on-ramp provision."
+    },
+    {
+        "author": "Russ Frushtick",
+        "title": "Interview: Nintendo’s Doug Bowser on COVID-19’s impact, Animal Crossing’s success, and Switch Pro rumors - Polygon",
+        "topic": "technology",
+        "source": "Polygon",
+        "description": "Polygon speaks to Nintendo of America president Doug Bowser about Nintendo’s successes in 2020 and what the future holds for Animal Crossing, The Legend of Zelda: Breath of the Wild 2, and more.",
+        "urlToImage": "https://cdn.vox-cdn.com/thumbor/-CvWOjC3lM3tUUjSCU7gvqgf6LE=/0x215:3000x1786/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22170137/jbareham_201214_0906_nintendo_bowser.jpg",
+        "url": "https://www.polygon.com/interviews/22170222/nintendo-doug-bowser-interview-switch-pro-joycon-drift-animal-crossing"
+    },
+    {
+        "urlToImage": "http://oyster.ignimgs.com/mediawiki/apis.ign.com/cyberpunk-2077/4/44/CP2077_Ripper_CharlesLocation.png",
+        "title": "How to Get a Permanent Ripperdoc Discount - Cyberpunk 2077 Wiki Guide - IGN",
+        "url": "https://ca.ign.com/wikis/cyberpunk-2077/How_to_Get_a_Permanent_Ripperdoc_Discount",
+        "description": "There are many Ripperdocs that live all over Night City that can install various expensive cyberware - but only one of them has something to hide, and will do",
+        "source": "IGN",
+        "author": null,
+        "topic": "technology"
+    },
+    {
+        "topic": "technology",
+        "title": "Poll: As rumors suggest a redesign, do you prefer the design of AirPods or AirPods Pro? - 9to5Mac",
+        "url": "https://9to5mac.com/2020/12/16/airpods-design-poll/",
+        "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2019/11/AirPods-vs-Pro.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+        "source": "9to5Mac",
+        "author": null,
+        "description": "A report indicated that Apple is working on new AirPods, referred to as ‘AirPods Pro Lite,’ with a design similar to the current AirPods Pro."
+    },
+    {
+        "description": "Sandra Jeenie Kwon worked as a flight attendant for Emirates . In a recent TikTok video, she warned people traveling from the US not to take a voucher if they get involuntarily bumped.",
+        "author": "Carly Stern",
+        "topic": "technology",
+        "title": "Flight attendant warns US travelers NOT to take vouchers if they get bumped from a full flight - Daily Mail",
+        "url": "https://www.dailymail.co.uk/femail/article-9060505/Flight-attendant-warns-travelers-NOT-vouchers-bumped-flight.html",
+        "urlToImage": "https://i.dailymail.co.uk/1s/2020/12/16/18/36927640-0-image-a-131_1608143455723.jpg",
+        "source": "Daily Mail"
+    },
+    {
+        "source": "9to5Mac",
+        "url": "https://9to5mac.com/2020/12/16/how-to-use-cardio-fitness-on-iphone-and-apple-watch/",
+        "urlToImage": "https://i1.wp.com/9to5mac.com/wp-content/uploads/sites/6/2020/12/how-to-use-cardio-fitness-levels-on-iphone-and-apple-watch-guide.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+        "topic": "technology",
+        "author": null,
+        "title": "Here’s how and why you should set up Cardio Fitness on iPhone and Apple Watch - 9to5Mac",
+        "description": "This step by step guide with images covers how to use Cardio Fitness on iPhone and Apple Watch, why it's valuable, how to measure it, more."
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=iyfN6rMv7wo",
+        "description": "Crimson Desert executive producer Daeil Kim talks you through the impressive in-game trailer from The Game Awards, giving more insight into this gorgeous new...",
+        "topic": "technology",
+        "urlToImage": "https://i.ytimg.com/vi/iyfN6rMv7wo/maxresdefault.jpg",
+        "title": "Crimson Desert: Developer Shares Secrets from the Game Awards Trailer - IGN",
+        "source": "YouTube",
+        "author": null
+    },
+    {
+        "title": "Facebook assisting Epic Games in legal fight with Apple - Seeking Alpha",
+        "author": null,
+        "source": "Seeking Alpha",
+        "urlToImage": "https://static3.seekingalpha.com/assets/og_image_192-59bfd51c9fe6af025b2f9f96c807e46f8e2f06c5ae787b15bf1423e6c676d4db.png",
+        "url": "https://seekingalpha.com/news/3645056-facebook-assisting-epic-games-in-legal-fight-apple",
+        "description": "Facebook (FB -0.1%) - already taking a number of opportunities to swing at Apple (AAPL +0.1%) over privacy and paid apps - says it will help Fortnite maker Epic Games with its legal fight against Apple and its App Store practices.",
+        "topic": "technology"
+    },
+    {
+        "title": "An absolutely wild mod has brought real-time ray tracing to the SNES - The Verge",
+        "source": "The Verge",
+        "author": "Mitchell Clark",
+        "url": "https://www.theverge.com/2020/12/16/22178922/snes-mod-ray-tracing-3d-graphics",
+        "urlToImage": "https://cdn.vox-cdn.com/thumbor/RsymYYnXMIdDJUhJBMGIncsC3oE=/0x20:1024x556/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22175585/Hardware.jpg",
+        "topic": "technology",
+        "description": "Programmer Ben Carter has brought real-time ray tracing, a cutting-edge graphics technology, to the SNES, a 30-year-old console."
+    },
+    {
+        "author": "Sheila Kaplan",
+        "url": "https://www.nytimes.com/2020/12/16/health/covid-masks-effectiveness.html",
+        "urlToImage": "https://static01.nyt.com/images/2020/12/16/science/16VIRUS-MASKS4/16VIRUS-MASKS4-facebookJumbo.jpg",
+        "source": "New York Times",
+        "topic": "technology",
+        "description": "A C.D.C. division is working with an industry standards group to develop filtration standards — and products that meet them will be able to carry labels saying so.",
+        "title": "How Effective Is the Mask You’re Wearing? You May Know Soon - The New York Times"
+    },
+    {
+        "urlToImage": "https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-12%2F17f8f070-3fd0-11eb-aff7-e3621ccf89c3&client=amp-blogside-v2&signature=1b60676354df8ebf88745b6ed57ac434c6798ec5",
+        "topic": "technology",
+        "url": "https://www.engadget.com/kickstarter-unsung-story-december-17-190154210.html",
+        "author": "",
+        "source": "Engadget",
+        "title": "Kickstarter cautionary tale 'Unsung Story' hits Steam early access tomorrow - Engadget",
+        "description": "One of the most infamous games in Kickstarter history has something approaching a release date"
     }
 ]
