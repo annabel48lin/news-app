@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Home from "./Home";
 import Following from "./Following";
 import Settings from "./Settings";
@@ -42,6 +42,28 @@ function App() {
     setValue(newValue);
   };
 
+  type CleanArticle = {
+    source: string;
+    author: string;
+    title: string;
+    topic: string;
+    description: string;
+    url: string;
+    urlToImage: string;
+  };
+
+  let country = "us"
+  
+
+  const fetchArticles = () => {
+    fetch('/newsToday?country=' + country)
+      .then((res) => res.json())
+      .then((json) => {console.log(json); setArticles(json)});
+  }
+  // const articles:CleanArticle[] = require("./dummyArticles.json")
+  const [articles, setArticles] = useState<CleanArticle[]>([])
+  useEffect(() => fetchArticles(), []);
+
 
   const width = 1500;
 
@@ -69,10 +91,22 @@ function App() {
       </Toolbar>
 
       <Switch>
-        <Route path="/home" component={Home} />
-        <Route path="/following" component={Following} />
+        <Route path="/home" 
+        render={(props) => (
+          <Home {...props} articles = {articles} />
+        )}
+        />
+        <Route path="/following" 
+        render={(props) => (
+          <Following {...props} articles = {articles} />
+        )}
+        />
         <Route path="/settings" component={Settings} />
-        <Route path="/" component={Home} /> 
+        <Route path="/" 
+        render={(props) => (
+          <Home {...props} articles = {articles} />
+        )}
+         /> 
       </Switch>
     </div>
     

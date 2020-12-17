@@ -4,37 +4,38 @@ import "./Border.css";
 import FilteredArticles from "./FilteredArticles";
 import Topic from "./Topic";
 
+type CleanArticle = {
+  source: string;
+  author: string;
+  title: string;
+  topic: string;
+  description: string;
+  url: string;
+  urlToImage: string;
+};
 
-const Following = () => {
+type Props = {readonly articles:CleanArticle[]}
+
+const Following = ({articles}:Props) => {
   const [searchBar, setSearchBar] = useState("");
-  type CleanArticle = {
-    source: string;
-    author: string;
-    title: string;
-    topic: string;
-    description: string;
-    url: string;
-    urlToImage: string;
-  };
-  const articles:CleanArticle[] = require("./dummyArticles.json")
+  
+  // const articles:CleanArticle[] = require("./dummyArticles.json")
 
-  const following = ["Politics", "World", "Tech"]
+  const following = ["Business", "Sports", "Technology"]
   
   const containsStr = (arr : string[], str : string) => {
     for (const topic of arr) {
-      if (topic === str) return true
+      if (topic.toLowerCase() === str) return true
     }
     return false 
   };
 
   const topicsInit = following.map((topicName)=> ({name: topicName, fav: false}))
-  
-  let filteredArticles = articles
-  
+    
   // articles that have topics you are following (based on settings)
-  // let filteredArticles =  articles.filter((article)=>
-  //   (containsStr (following, article.topic))
-  // )
+  let filteredArticles =  articles.filter((article)=>
+    (containsStr (following, article.topic))
+  )
 
   const [topics, setTopics] = useState(topicsInit);
   // pass this in to Topic 
@@ -48,7 +49,7 @@ const Following = () => {
 
   const contains = (arr : { name: string;  fav: boolean} [], str : string) => {
     for (const val of arr) {
-        if (val.name === str && val.fav===true) return true
+        if (val.name.toLowerCase() === str && val.fav===true) return true
     }
     return false 
   };

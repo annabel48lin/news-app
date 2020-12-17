@@ -1,23 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./Border.css";
 import FilteredArticles from "./FilteredArticles";
 import Topic from "./Topic";
 
+type CleanArticle = {
+  source: string;
+  author: string;
+  title: string;
+  topic: string;
+  description: string;
+  url: string;
+  urlToImage: string;
+};
 
-const Home = () => {
+type Props = {readonly articles:CleanArticle[]}
+
+const Home = ({articles}:Props) => {
   const [searchBar, setSearchBar] = useState("");
 
-  type CleanArticle = {
-    source: string;
-    author: string;
-    title: string;
-    topic: string;
-    description: string;
-    url: string;
-    urlToImage: string;
-  };
-  const articles:CleanArticle[] = require("./dummyArticles.json")
+
+  //TODO: let users choose their country in prefs
+  // let country = "us"
+  // const fetchArticles = () => {
+  //   fetch('/newsToday?country=' + country)
+  //     .then((res) => res.json())
+  //     .then((json) => setArticles(json));
+  // }
+  // // const articles:CleanArticle[] = require("./dummyArticles.json")
+  // const [articles, setArticles] = useState<readonly CleanArticle[]>([])
+  
+  // useEffect(() => fetchArticles(), []);
 
 
   // US, World, Politics, Business, Tech, Entertainment
@@ -69,9 +82,9 @@ const Home = () => {
   
   //filter by topic here??
   //see if topic is faved. if no topic is faved, return general (has all topics)
-  let filteredArticles = articles.filter(article => article.topic === "general");
+  let filteredArticles = (articles || []).filter((article) => article.topic === "general");
   if (!allFalse){
-    filteredArticles =  articles.filter((article)=>
+    filteredArticles =  (articles || []).filter((article)=>
     (contains (topics, article.topic))
   )
   }
