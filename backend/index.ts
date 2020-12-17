@@ -28,6 +28,7 @@ type Article = {
   author: string;
   title: string;
   description: string;
+  date: string;
   url: string;
   urlToImage: string;
   publishedAt: string;
@@ -43,7 +44,11 @@ type CleanArticle = {
   urlToImage: string;
 };
 
-type ArticleWithCategory = CleanArticle & {
+type CleanArticleWithCategory = CleanArticle & {
+  topic: string;
+};
+
+type ArticleWithCategory = Article & {
   topic: string;
 };
 
@@ -56,11 +61,12 @@ type ArticleWithCategory = CleanArticle & {
     If categories=true, return 2) 
  */
 
-const clean = (a: Article) => {
-  const cleaned: CleanArticle = {
+const clean = (a: ArticleWithCategory) => {
+  const cleaned: CleanArticleWithCategory = {
     source: a.source.name,
     author: a.author,
     title: a.title,
+    topic: a.topic,
     description: a.description,
     url: a.url,
     urlToImage: a.urlToImage,
@@ -97,7 +103,7 @@ const categories = [
 ];
 
 type returnedArticles = {
-  articles: ArticleWithCategory[]
+  articles: CleanArticleWithCategory[]
 }
 
 // query param: country
@@ -123,30 +129,32 @@ app.post("/refreshNews", async function (req: Request, res: Response) {
   let url = base + "top-headlines?" + "country=" + country;
   
 
-  let all_articles: ArticleWithCategory[] = [];
+  let all_articles:ArticleWithCategory[] = [];
   for (let i: number = 0; i < categories.length; i++) {
     const category: string = categories[i];
     try {
     const posts = await axios.get(url + "&category=" + category + apiKey);
-    const articles: Article[] = posts.data.articles;
-    // console.log(articles)
-
-    let cleaned = articles.map((a) => clean(a));
-    let categorized: ArticleWithCategory[] = cleaned.map((a) => {
-      (a as ArticleWithCategory)["topic"] = category;
+    let articles: Article[] = posts.data.articles;
+    
+    let categorized = articles.map((a) => {
+      (a as any).topic = category;
       return a as ArticleWithCategory;
     });
+
 
     all_articles = all_articles.concat(categorized);
     } catch {
       console.error("Failure!");
     }
   }
+  all_articles = all_articles.sort((a, b) => compare(a, b));
+  let cleaned = all_articles.map((a) => clean(a));
   console.log(all_articles)
 
-  await articlesCollection.doc(country).set({"articles": all_articles});
-  res.send(all_articles)
+  await articlesCollection.doc(country).set({"articles": cleaned});
+  res.send(cleaned)
 });
+
 
 /*
 app.get("/newsToday", async function (req: Request, res: Response) {
