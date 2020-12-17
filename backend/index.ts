@@ -43,6 +43,19 @@ type CleanArticle = {
   urlToImage: string;
 };
 
+type ArticleWithCategory = CleanArticle & {
+  topic: string;
+};
+
+/*
+ TO DO:
+ - make a refresh method that refreshes the 2 sets of articles 
+    - 1) all articles, not separated by topic (top-headlines from newsAPI)
+    - 2) articles with topics (get each category and combine)
+ - modify /newsToday so that if there are no categories, return 1). 
+    If categories=true, return 2) 
+ */
+
 const clean = (a: Article) => {
   const cleaned: CleanArticle = {
     source: a.source.name,
@@ -66,6 +79,76 @@ function compare(a: Article, b: Article) {
   return 0;
 }
 
+// endpoints: https://newsapi.org/v2/everything?apiKey=910452c99f54428bb487e74cdb976f0f
+//
+
+/** query params: country
+ *  categories = true or categories = false
+ */
+
+const categories = [
+  "business",
+  "entertainment",
+  "general",
+  "health",
+  "science",
+  "sports",
+  "technology",
+];
+
+type returnedArticles = {
+  articles: ArticleWithCategory[]
+}
+
+// query param: country
+app.get("/newsToday", async function (req: Request, res: Response) {
+  const country = req.query.country ? req.query.country as string: "us";
+
+  const doc = await articlesCollection.doc(country).get();
+  let articles = doc.data() as returnedArticles;
+  res.send(articles.articles);
+});
+
+// articlesCollection stores articles for each country
+// country will store categorized articles (compile them from each category)  (ex: us)
+const articlesCollection = db.collection("articles");
+
+/**
+ * query param: a country
+ * updates that country's news
+ * - categorized articles (compile them from each category)
+ */
+app.post("/refreshNews", async function (req: Request, res: Response) {
+  const country = req.query.country ? req.query.country as string: "us";
+  let url = base + "top-headlines?" + "country=" + country;
+  
+
+  let all_articles: ArticleWithCategory[] = [];
+  for (let i: number = 0; i < categories.length; i++) {
+    const category: string = categories[i];
+    try {
+    const posts = await axios.get(url + "&category=" + category + apiKey);
+    const articles: Article[] = posts.data.articles;
+    // console.log(articles)
+
+    let cleaned = articles.map((a) => clean(a));
+    let categorized: ArticleWithCategory[] = cleaned.map((a) => {
+      (a as ArticleWithCategory)["topic"] = category;
+      return a as ArticleWithCategory;
+    });
+
+    all_articles = all_articles.concat(categorized);
+    } catch {
+      console.error("Failure!");
+    }
+  }
+  console.log(all_articles)
+
+  await articlesCollection.doc(country).set({"articles": all_articles});
+  res.send(all_articles)
+});
+
+/*
 app.get("/newsToday", async function (req: Request, res: Response) {
   const country = req.query.country ? req.query.country : "us";
   let categories: string[] = req.query.categories
@@ -120,6 +203,7 @@ app.get("/newsToday", async function (req: Request, res: Response) {
 
   res.send(news);
 });
+*/
 
 /**
  * store for each user:
