@@ -29,33 +29,37 @@ const Settings = () => {
         fetch("/UserPref/" + email, {
           method: "GET",
           headers: {
-            "Content-Type": "application/json",
             idtoken,
           },
         })
           .then((response) => response.json())
           .then((d) => {
+            // console.log("hereeee")
+            console.log(d);
             setTopics(d.categories);
             setCountry(d.country);
           });
       })
       .catch(() => {
-        console.log("not authenticated");
+        console.log("not authenticated get");
       });
   };
 
   const updateTopics = (name: string) => {
     // find where in topics that the name occurs, and then set fav
+    // console.log("topics", topics)
     const newArr = topics.map((topic) =>
       topic.name === name ? { name: name, following: !topic.following } : topic
     );
     setTopics(newArr);
 
+    // console.log("newarr",newArr)
+
     //get email from firebase
     //send req to update user prefs
 
     const email = firebase.auth().currentUser?.email;
-    const prefs: UserPref = { categories: topics, country: country };
+    const prefs: UserPref = { categories: newArr, country: country };
 
     firebase
       .auth()
@@ -69,18 +73,35 @@ const Settings = () => {
           },
           body: JSON.stringify(prefs),
         });
-        //   .then((res) => res.text())
-        //   .then((id) => setSongs([...songs, { name, artist, rating, id }]));
       })
       .catch(() => {
-        console.log("not authenticated");
+        console.log("not authenticated set");
       });
   };
 
-  console.log(topics);
-
   const changeCountry = (event: any) => {
-    setCountry(event.target.value);
+    const newCountry = event.target.value;
+    setCountry(newCountry);
+
+    const email = firebase.auth().currentUser?.email;
+    const prefs: UserPref = { categories: topics, country: newCountry };
+
+    firebase
+      .auth()
+      .currentUser?.getIdToken(true)
+      .then((idtoken) => {
+        fetch("/UserPref/" + email, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            idtoken,
+          },
+          body: JSON.stringify(prefs),
+        });
+      })
+      .catch(() => {
+        console.log("not authenticated set");
+      });
   };
 
   const countries = [
@@ -140,31 +161,37 @@ const Settings = () => {
     "za",
   ];
 
-  fetchUserPrefs();
+  // fetchUserPrefs();
 
   return (
     <div style={{ marginLeft: "20px" }}>
-      <h1>Sign In </h1>
       <Authenticated>
-        <text>(Will implement later after Firebase is set up)</text>
-      </Authenticated>
-      <h1>Followed Topics: </h1>
-      <div style={{ marginLeft: "20px" }}>
-        <select onChange={changeCountry}>
-          {countries.map((country) => (
-            <option value={country}>{country.toUpperCase()}</option>
-          ))}
-        </select>
+        <div style={{ width: "100%", overflow: "auto" }}>
+          <div style={{ float: "left" }}>
+            <h1>Followed Topics: </h1>
+          </div>
+          <div style={{ float: "right", width: "70%" }}>
+            <br /> <br />
+            <button onClick={fetchUserPrefs}>⟳</button>
+          </div>
+        </div>
+        <div style={{ marginLeft: "20px" }}>
+          <select onChange={changeCountry} value={country}>
+            {countries.map((country) => (
+              <option value={country}>{country.toUpperCase()}</option>
+            ))}
+          </select>
 
-        {topics.map((topic) => (
-          <Topic
-            key={topic.name}
-            name={topic.name}
-            fav={topic.following}
-            callback={updateTopics}
-          />
-        ))}
-      </div>
+          {topics.map((topic) => (
+            <Topic
+              key={topic.name}
+              name={topic.name}
+              fav={topic.following}
+              callback={updateTopics}
+            />
+          ))}
+        </div>
+      </Authenticated>
     </div>
   );
 };

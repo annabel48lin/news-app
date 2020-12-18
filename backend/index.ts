@@ -233,8 +233,8 @@ type UserPrefWithID = UserPref & {
 };
 
 const inituserpref = {
-  country : "us",
-  categories : [
+  country: "us",
+  categories: [
     {
       name: "Business",
       following: false,
@@ -259,8 +259,8 @@ const inituserpref = {
       name: "Technology",
       following: false,
     },
-  ]
-}
+  ],
+};
 
 const postsCollection = db.collection("userprefs");
 
@@ -274,8 +274,6 @@ app.post("/UserPref/:email", async function (req: Request, res: Response) {
       const userpref: UserPref = req.body;
       //potentially check email with firebase
 
-  
-
       //if email is free, create. else, update instead
       await postsCollection.doc(email).set(userpref);
       res.send(userpref);
@@ -287,7 +285,7 @@ app.post("/UserPref/:email", async function (req: Request, res: Response) {
 
 // read posts by name
 app.get("/UserPref/:email", async function (req: Request, res: Response) {
-  const email = req.params.email
+  const email = req.params.email;
   admin
     .auth()
     .verifyIdToken(req.headers.idtoken as string)
@@ -295,31 +293,45 @@ app.get("/UserPref/:email", async function (req: Request, res: Response) {
       // const doc = await postsCollection.doc(email).get();
       // let post: UserPrefWithID = doc.data() as UserPrefWithID;
       // res.send(post);
-      console.log(email)
-      
-    
+      console.log(email);
 
-      var ref = firebase.database().ref("userprefs/"+"abc123@cornell.edu");
-      console.log("ref",ref)
-      ref.once("value").then(async function (snapshot) {
-        if (snapshot.exists() ) {
-          console.log("here1-1")
+      postsCollection.doc(email).onSnapshot(async function (snapshot) {
+        const id = snapshot.id;
+
+        if (snapshot.exists) {
+          console.log("here1-1");
           const doc = await postsCollection.doc(email).get();
           let post: UserPrefWithID = doc.data() as UserPrefWithID;
           res.send(post);
-          console.log("here1-2")
-        }
-        else {
-          console.log("here2-1")
+          console.log("here1-2");
+        } else {
+          console.log("here2-1");
           await postsCollection.doc(email).set(inituserpref);
           res.send(inituserpref);
-          console.log("here2-2")
+          console.log("here2-2");
         }
-
-      }).catch(() => {
-        console.log("auth error1");
       });
 
+      // var ref = firebase.database().ref("/userprefs/"+email);
+      // console.log("ref",ref)
+      // ref.once("value").then(async function (snapshot) {
+      //   if (snapshot.exists() ) {
+      //     console.log("here1-1")
+      //     const doc = await postsCollection.doc(email).get();
+      //     let post: UserPrefWithID = doc.data() as UserPrefWithID;
+      //     res.send(post);
+      //     console.log("here1-2")
+      //   }
+      //   else {
+      //     console.log("here2-1")
+      //     await postsCollection.doc(email).set(inituserpref);
+      //     res.send(inituserpref);
+      //     console.log("here2-2")
+      //   }
+
+      // }).catch(() => {
+      //   console.log("auth error1");
+      // });
     })
     .catch(() => {
       console.log("auth error2");

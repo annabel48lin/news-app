@@ -39,7 +39,10 @@ const Authenticated = ({ children }: Props) => {
     <div>
       {user && children}
       {!user && (
+        <div>
+        <h1>Sign In </h1>
         <FirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+        </div>
       )}
     </div>
   );
