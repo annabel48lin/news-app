@@ -5,9 +5,9 @@ import firebase from "firebase/app";
 // Initialize the FirebaseUI Widget using Firebase.
 // var ui = new firebaseui.auth.AuthUI(firebase.auth());
 type category = {
-    name: string;
-    following: boolean;
-  }
+  name: string;
+  following: boolean;
+};
 
 type UserPref = {
   categories: category[];
@@ -23,22 +23,26 @@ const Settings = () => {
 
   const fetchUserPrefs = () => {
     firebase
-        .auth()
-        .currentUser?.getIdToken(true)
-        .then((idtoken) => {
-        fetch("/UserPref/" + email)
-            .then((response) => response.json())
-            .then((d) => {
+      .auth()
+      .currentUser?.getIdToken(true)
+      .then((idtoken) => {
+        fetch("/UserPref/" + email, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            idtoken,
+          },
+        })
+          .then((response) => response.json())
+          .then((d) => {
             setTopics(d.categories);
             setCountry(d.country);
-            });
-        //   .then((res) => res.text())
-        //   .then((id) => setSongs([...songs, { name, artist, rating, id }]));
-        })
-        .catch(() => {
+          });
+      })
+      .catch(() => {
         console.log("not authenticated");
-        });
-  }
+      });
+  };
 
   const updateTopics = (name: string) => {
     // find where in topics that the name occurs, and then set fav
@@ -136,30 +140,33 @@ const Settings = () => {
     "za",
   ];
 
-  fetchUserPrefs()
+  fetchUserPrefs();
 
   return (
-        
-    <div style={{marginLeft: "20px"}}>
-        <h1>Sign In </h1>
-        <Authenticated>
+    <div style={{ marginLeft: "20px" }}>
+      <h1>Sign In </h1>
+      <Authenticated>
         <text>(Will implement later after Firebase is set up)</text>
-        </Authenticated>
-        <h1>Followed Topics: </h1>
-        <div style={{marginLeft: "20px"}}>
+      </Authenticated>
+      <h1>Followed Topics: </h1>
+      <div style={{ marginLeft: "20px" }}>
         <select onChange={changeCountry}>
-          {countries.map((country) => (<option value={country}>{country.toUpperCase()}</option>))}
+          {countries.map((country) => (
+            <option value={country}>{country.toUpperCase()}</option>
+          ))}
         </select>
 
-        {topics.map((topic)=>(
-        
-        <Topic key = {topic.name} name={topic.name} fav={topic.following} callback={updateTopics}/>
-
+        {topics.map((topic) => (
+          <Topic
+            key={topic.name}
+            name={topic.name}
+            fav={topic.following}
+            callback={updateTopics}
+          />
         ))}
+      </div>
     </div>
-  </div>
-  
-)
-        }
+  );
+};
 
-        export default Settings;
+export default Settings;

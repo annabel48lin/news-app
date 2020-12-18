@@ -295,24 +295,34 @@ app.get("/UserPref/:email", async function (req: Request, res: Response) {
       // const doc = await postsCollection.doc(email).get();
       // let post: UserPrefWithID = doc.data() as UserPrefWithID;
       // res.send(post);
+      console.log(email)
+      
+    
 
-      var ref = firebase.database().ref("userprefs/" + email);
+      var ref = firebase.database().ref("userprefs/"+"abc123@cornell.edu");
+      console.log("ref",ref)
       ref.once("value").then(async function (snapshot) {
         if (snapshot.exists() ) {
+          console.log("here1-1")
           const doc = await postsCollection.doc(email).get();
           let post: UserPrefWithID = doc.data() as UserPrefWithID;
           res.send(post);
+          console.log("here1-2")
         }
         else {
+          console.log("here2-1")
           await postsCollection.doc(email).set(inituserpref);
           res.send(inituserpref);
+          console.log("here2-2")
         }
 
+      }).catch(() => {
+        console.log("auth error1");
       });
 
     })
     .catch(() => {
-      console.log("auth error");
+      console.log("auth error2");
     });
 });
 
