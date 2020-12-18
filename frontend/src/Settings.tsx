@@ -18,9 +18,10 @@ type Props = {
   readonly following: string[];
   readonly callbackFollowing: (following: string[]) => void
   readonly callbackCountry: (country: string) => void
-  // readonly countryI: string
+  readonly countryI: string
+  readonly callbackArticles: () => void
 }
-const Settings = ({following, callbackFollowing, callbackCountry} : Props) => {
+const Settings = ({following, callbackFollowing, callbackCountry, countryI, callbackArticles} : Props) => {
 
   const allTopics = ['business', 'entertainment', 'health', 'science', 'sports', 'technology']
 
@@ -35,7 +36,7 @@ const Settings = ({following, callbackFollowing, callbackCountry} : Props) => {
 
   //fetch topics init
   const [topics, setTopics] = useState<category[]>(formatFollowing(following));
-  const [country, setCountry] = useState('us');
+  const [country, setCountry] = useState(countryI);
 
   const email = firebase.auth().currentUser?.email;
 
@@ -50,6 +51,7 @@ const Settings = ({following, callbackFollowing, callbackCountry} : Props) => {
   }, 
     [topics, country]
   );
+
   
 
   const fetchUserPrefs = () => {
@@ -69,6 +71,8 @@ const Settings = ({following, callbackFollowing, callbackCountry} : Props) => {
             console.log(d);
             setTopics(d.categories);
             setCountry(d.country);
+
+            callbackArticles()
           });
       })
       .catch(() => {
@@ -196,6 +200,7 @@ const Settings = ({following, callbackFollowing, callbackCountry} : Props) => {
   ];
 
   // fetchUserPrefs();
+  console.log("country", country)
 
   return (
     <div style={{ marginLeft: "20px" }}>
