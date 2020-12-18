@@ -4,6 +4,8 @@ import admin from "firebase-admin";
 import bodyParser from "body-parser";
 import type { Request, Response } from "express";
 import firebase from "firebase/app";
+import cors from "cors";
+import path from "path";
 
 // Path to wherever you put your service-account.json
 const serviceAccount = require("./service-account.json");
@@ -21,6 +23,9 @@ admin.initializeApp({
 
 const express = require("express");
 const app = express();
+
+app.use(cors());
+app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 const db = admin.firestore();
 const port = 8080;
@@ -266,6 +271,5 @@ app.get("/UserPref/:email", async function (req: Request, res: Response) {
 });
 
 // tell express to listen for requests on port 8080
-app.listen(8080, function () {
-  console.log("Backend started");
-});
+
+app.listen(process.env.PORT || 8080, () => console.log("backend started"));
