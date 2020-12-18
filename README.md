@@ -2,24 +2,22 @@
 
 A news aggregation app that uses [newsAPI](https://newsapi.org/), where each user is able to adjust their preferences (country, categories of interest). 
 
-# Frontend (part 1): 
-Displays news from various sources and allows the user to search for keywords, filter by topic, and set favorite topics.
-# Backend (part 2): 
-    GET /newsToday - ex) http://localhost:57964/newsToday?country=us&categories=business&categories=health
-        takes in country (only one), and categories (multiple) and returns the news
-    POST /newUserPref - ex) http://localhost:8080/newUserPref
-        stores a user's preferences (includes country and categories) in database
-    POST /UpdateUserPref/:id - ex) http://localhost:8080/UpdateUserPref/TDCsUKy1oVUnjD5Auao7
-        updates a user's preferences 
-    GET /UserPref/:id - ex) http://localhost:8080/post/TDCsUKy1oVUnjD5Auao7
-        gets preferences for user w/ that id
-
-    jsons should look like: 
-    {
-    "categories": ["science", "sports"],
-    "country": "tw"
-    }
+# Frontend: 
+Displays news from various sources and allows the user to search for keywords, filter by topic, and set favorite topics. When a user signs in, they will be able to set their following feeds and country.
+# Backend: 
+    POST /refreshNews - ex) http://localhost:8080/refreshNews?country=us
+        takes in country (only one) and updates the news for that country in the database
+        
+    GET /newsToday - ex) http://localhost:8080/newsToday?country=us
+        takes in country (only one) and returns the news in the database
+       
+    POST /UserPref/:email - ex) http://localhost:8080/UserPref/all273@cornell.edu
+        takes in an email and a json of categories and country creates or updates database. Requires authentication. 
+        
+    GET /UserPref/:email - ex) http://localhost:8080/UserPref/abc123@cornell.edu
+        takes in an email and returns the preferences associated with that email. Requires authentication. 
+     
  
 Group Members: Annabel Lin (all273), Justin Hsu (jah574)
 
-Github: https://github.coecis.cornell.edu/all273/webdev-final-project
+Github: https://github.com/annabel48lin/news-app
