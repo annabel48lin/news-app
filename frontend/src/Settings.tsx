@@ -18,9 +18,9 @@ type Props = {
   readonly following: string[];
   readonly callbackFollowing: (following: string[]) => void
   readonly callbackCountry: (country: string) => void
-  readonly countryI: string
+  // readonly countryI: string
 }
-const Settings = ({following, callbackFollowing, callbackCountry, countryI} : Props) => {
+const Settings = ({following, callbackFollowing, callbackCountry} : Props) => {
 
   const allTopics = ['business', 'entertainment', 'health', 'science', 'sports', 'technology']
 
@@ -35,7 +35,7 @@ const Settings = ({following, callbackFollowing, callbackCountry, countryI} : Pr
 
   //fetch topics init
   const [topics, setTopics] = useState<category[]>(formatFollowing(following));
-  const [country, setCountry] = useState(countryI);
+  const [country, setCountry] = useState('us');
 
   const email = firebase.auth().currentUser?.email;
 

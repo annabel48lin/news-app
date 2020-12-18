@@ -66,7 +66,7 @@ function App() {
   }
   // const articles:CleanArticle[] = require("./dummyArticles.json")
   const [articles, setArticles] = useState<CleanArticle[]>([])
-  useEffect(() => fetchArticles(), []);
+  useEffect(() => fetchArticles());
   
 
   const width = 1500;
@@ -136,7 +136,7 @@ function App() {
           <Following {...props} 
             following = {following}
             callbackFollowing = {(following) => setFollowing(following)}
-           articles = {articles} />
+            articles = {articles} />
         )}
         />
         <Route path="/settings"
@@ -149,7 +149,7 @@ function App() {
             following = {following}
             callbackFollowing = {(following) => setFollowing(following)}
             callbackCountry = {(country) => setCountry(country)}
-            countryI = {country}
+            // countryI = {country}
             />
             )}}
         />
