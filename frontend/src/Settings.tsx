@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Topic from "./Topic";
 import Authenticated from "./Authenticated";
 import firebase from "firebase/app";
@@ -14,12 +14,24 @@ type UserPref = {
   country: string;
 };
 
-const Settings = () => {
+type Props = {
+  readonly following: string[];
+  readonly callbackFollowing: (following: string[]) => void
+}
+const Settings = ({following, callbackFollowing} : Props) => {
   //fetch topics init
   const [topics, setTopics] = useState<category[]>([]);
   const [country, setCountry] = useState("us");
 
   const email = firebase.auth().currentUser?.email;
+
+
+  let followingCategories = topics.filter((topic) => topic.following)  
+
+  useEffect(
+    () => callbackFollowing(followingCategories.map((category) => category.name))
+  );
+    
 
   const fetchUserPrefs = () => {
     firebase
@@ -53,6 +65,8 @@ const Settings = () => {
     );
     setTopics(newArr);
 
+    
+    console.log(following)
     // console.log("newarr",newArr)
 
     //get email from firebase
@@ -79,7 +93,7 @@ const Settings = () => {
       });
   };
 
-  const changeCountry = (event: any) => {
+    const changeCountry = (event: any) => {
     const newCountry = event.target.value;
     setCountry(newCountry);
 
@@ -173,6 +187,8 @@ const Settings = () => {
           <div style={{ float: "right", width: "70%" }}>
             <br /> <br />
             <button onClick={fetchUserPrefs}>⟳</button>
+            &nbsp; &nbsp;
+            <button onClick={() => firebase.auth().signOut()}> Sign Out </button>
           </div>
         </div>
         <div style={{ marginLeft: "20px" }}>

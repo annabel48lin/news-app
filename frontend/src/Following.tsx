@@ -14,14 +14,18 @@ type CleanArticle = {
   urlToImage: string;
 };
 
-type Props = {readonly articles:CleanArticle[]}
+type Props = {
+  readonly articles:CleanArticle[];
+  readonly following: string[];
+  readonly callbackFollowing: (following: string[]) => void
+}
 
-const Following = ({articles}:Props) => {
+const Following = ({articles, following}:Props) => {
   const [searchBar, setSearchBar] = useState("");
   
   // const articles:CleanArticle[] = require("./dummyArticles.json")
 
-  const following = ["Business", "Sports", "Technology"]
+  // const following = ["Business", "Sports", "Technology"]
   
   const containsStr = (arr : string[], str : string) => {
     for (const topic of arr) {
@@ -60,10 +64,10 @@ const Following = ({articles}:Props) => {
     (contains (topics, article.topic))
   )
   }
-  
+
   return (
     <div>
-      <h2 style={{marginLeft: "20px"}}> Welcome! It's 12/1. Here's your news for today: </h2>
+      <h2 style={{marginLeft: "20px"}}> Here's the news from the topics you follow: </h2>
 
       
       <div style={{marginLeft: "20px"}}>

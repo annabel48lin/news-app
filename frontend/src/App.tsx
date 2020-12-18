@@ -37,6 +37,7 @@ function App() {
   ];
   
   const [value, setValue] = React.useState(0);
+  const [following, setFollowing] = useState<string[]>([]);
 
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
     setValue(newValue);
@@ -98,10 +99,20 @@ function App() {
         />
         <Route path="/following" 
         render={(props) => (
-          <Following {...props} articles = {articles} />
+          <Following {...props} 
+            following = {following}
+            callbackFollowing = {(following) => setFollowing(following)}
+           articles = {articles} />
         )}
         />
-        <Route path="/settings" component={Settings} />
+        <Route path="/settings"
+        render= {(props) => (
+          <Settings {...props}
+            following = {following}
+            callbackFollowing = {(following) => setFollowing(following)}
+            />
+        )}
+        />
         <Route path="/" 
         render={(props) => (
           <Home {...props} articles = {articles} />

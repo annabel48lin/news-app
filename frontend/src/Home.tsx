@@ -88,10 +88,13 @@ const Home = ({articles}:Props) => {
     (contains (topics, article.topic))
   )
   }
-  
+  var today = new Date();
+  var dd = String(today.getDate());
+  var mm = String(today.getMonth() + 1);
+
   return (
     <div>
-      <h2 style={{marginLeft: "20px"}}> Welcome! It's 12/1. Here's your news for today: </h2>
+      <h2 style={{marginLeft: "20px"}}> Welcome! It's {mm}/{dd}. Here's your news for today: </h2>
       <div style={{marginLeft: "20px"}}>
         {topics.map((topic)=>(
           
