@@ -20,4 +20,4 @@ Displays news from various sources and allows the user to search for keywords, f
  
 Group Members: Annabel Lin (all273), Justin Hsu (jah574)
 
-Github: https://github.coecis.cornell.edu/all273/webdev-final-project
+Github: https://github.com/annabel48lin/news-app
