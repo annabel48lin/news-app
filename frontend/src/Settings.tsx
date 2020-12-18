@@ -17,21 +17,40 @@ type UserPref = {
 type Props = {
   readonly following: string[];
   readonly callbackFollowing: (following: string[]) => void
+  readonly callbackCountry: (country: string) => void
+  readonly countryI: string
 }
-const Settings = ({following, callbackFollowing} : Props) => {
+const Settings = ({following, callbackFollowing, callbackCountry, countryI} : Props) => {
+
+  const allTopics = ['business', 'entertainment', 'health', 'science', 'sports', 'technology']
+
+  const formatFollowing = (lst: string[]) => {
+    return allTopics.map(t => {
+      let boo = false
+      if (lst.includes(t)) boo = true
+
+      return {name: t, following: boo}
+    })
+  }
+
   //fetch topics init
-  const [topics, setTopics] = useState<category[]>([]);
-  const [country, setCountry] = useState("us");
+  const [topics, setTopics] = useState<category[]>(formatFollowing(following));
+  const [country, setCountry] = useState(countryI);
 
   const email = firebase.auth().currentUser?.email;
 
 
   let followingCategories = topics.filter((topic) => topic.following)  
 
-  useEffect(
-    () => callbackFollowing(followingCategories.map((category) => category.name))
+  useEffect(() => {
+    callbackFollowing(followingCategories.map((category) => category.name))
+  
+    callbackCountry(country)
+    console.log(country)
+  }, 
+    [topics, country]
   );
-    
+  
 
   const fetchUserPrefs = () => {
     firebase
@@ -56,6 +75,7 @@ const Settings = ({following, callbackFollowing} : Props) => {
         console.log("not authenticated get");
       });
   };
+
 
   const updateTopics = (name: string) => {
     // find where in topics that the name occurs, and then set fav
@@ -194,7 +214,7 @@ const Settings = ({following, callbackFollowing} : Props) => {
         <div style={{ marginLeft: "20px" }}>
           <select onChange={changeCountry} value={country}>
             {countries.map((country) => (
-              <option value={country}>{country.toUpperCase()}</option>
+              <option key = {country} value={country}>{country.toUpperCase()}</option>
             ))}
           </select>
 

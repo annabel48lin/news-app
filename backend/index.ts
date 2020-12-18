@@ -9,9 +9,14 @@ import firebase from "firebase/app";
 const serviceAccount = require("./service-account.json");
 const key = require("./apikey.json");
 
+// admin.initializeApp({
+//   credential: admin.credential.cert(serviceAccount),
+//   databaseURL: "https://news-app-6ca40.firebaseio.com",
+// });
+
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://news-app-6ca40.firebaseio.com",
+  databaseURL: "https://newsapp2-70958.firebaseio.com",
 });
 
 const express = require("express");
@@ -155,63 +160,6 @@ app.post("/refreshNews", async function (req: Request, res: Response) {
   res.send(cleaned);
 });
 
-/*
-app.get("/newsToday", async function (req: Request, res: Response) {
-  const country = req.query.country ? req.query.country : "us";
-  let categories: string[] = req.query.categories
-    ? (req.query.categories as string[])
-    : [];
-  if (typeof req.query.categories === "string")
-    categories = [req.query.categories];
-  // console.log("categories", categories);
-  let url = base + "top-headlines?" + "country=" + country;
-
-  let news: CleanArticle[] = [];
-
-  // if categories are not specified, return all articles in country
-  if (categories.length === 0) {
-    // console.log(url + apiKey);
-    const posts = await axios.get(url + apiKey);
-    const articles: Article[] = posts.data.articles;
-    news = articles.map((a) => clean(a));
-
-    // console.log("news", news);
-  }
-
-  // if categories are specified, get articles in each category and merge into one list (should we sort by time?)
-  else {
-    let all_articles: Article[] = [];
-    url = url + "&category=";
-
-    for (let i: number = 0; i < categories.length; i++) {
-      const category: string = categories[i];
-      // console.log("category in loop", category);
-      // console.log(url + category + apiKey);
-      try {
-        const posts = await axios.get(url + category + apiKey);
-        const articles: Article[] = posts.data.articles;
-        // console.log(articles)
-        all_articles = all_articles.concat(articles);
-        // console.log("here1");
-        // console.log(all_articles);
-        // console.log("Success!");
-      } catch (e) {
-        console.error("Failure!");
-      }
-    }
-    // console.log("here2");
-    // console.log("all_articles", all_articles);
-    all_articles = all_articles.sort((a, b) => compare(a, b));
-
-    news = all_articles.map((a) => clean(a));
-    console.log(all_articles);
-  }
-  // http://localhost:57964/newsToday?country=us&categories=business&categories=health
-
-  res.send(news);
-});
-*/
-
 /**
  * store for each user:
  * categories they like
@@ -311,27 +259,6 @@ app.get("/UserPref/:email", async function (req: Request, res: Response) {
           console.log("here2-2");
         }
       });
-
-      // var ref = firebase.database().ref("/userprefs/"+email);
-      // console.log("ref",ref)
-      // ref.once("value").then(async function (snapshot) {
-      //   if (snapshot.exists() ) {
-      //     console.log("here1-1")
-      //     const doc = await postsCollection.doc(email).get();
-      //     let post: UserPrefWithID = doc.data() as UserPrefWithID;
-      //     res.send(post);
-      //     console.log("here1-2")
-      //   }
-      //   else {
-      //     console.log("here2-1")
-      //     await postsCollection.doc(email).set(inituserpref);
-      //     res.send(inituserpref);
-      //     console.log("here2-2")
-      //   }
-
-      // }).catch(() => {
-      //   console.log("auth error1");
-      // });
     })
     .catch(() => {
       console.log("auth error2");

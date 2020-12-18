@@ -35,6 +35,8 @@ const Following = ({articles, following}:Props) => {
   };
 
   const topicsInit = following.map((topicName)=> ({name: topicName, fav: false}))
+
+
     
   // articles that have topics you are following (based on settings)
   let filteredArticles =  articles.filter((article)=>
