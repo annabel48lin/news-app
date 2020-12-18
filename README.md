@@ -16,8 +16,12 @@ Displays news from various sources and allows the user to search for keywords, f
         
     GET /UserPref/:email - ex) http://localhost:8080/UserPref/abc123@cornell.edu
         takes in an email and returns the preferences associated with that email. Requires authentication. 
-     
+
+# Using the app
+Go to the settings tab and sign in. Then, click refresh and choose your country and categories. To update your articles, press refresh again (or maybe a few times). Go to Home and Following and enjoy!
  
 Group Members: Annabel Lin (all273), Justin Hsu (jah574)
 
 Github: https://github.com/annabel48lin/news-app
+
+Deployed Link: http://news-stop.herokuapp.com/ 
