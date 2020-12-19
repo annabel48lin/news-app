@@ -85,8 +85,6 @@ const clean = (a: ArticleWithCategory) => {
   return cleaned;
 };
 function compare(a: Article, b: Article) {
-  // "2020-12-11T18:11:00Z", "2020-12-11T17:05:00Z"
-  //            0123456789
   const indA = a.publishedAt.indexOf("T");
   const indB = b.publishedAt.indexOf("T");
   const timeA = a.publishedAt.substring(indA + 1);
@@ -95,10 +93,6 @@ function compare(a: Article, b: Article) {
   if (timeA < timeB) return 1;
   return 0;
 }
-
-// endpoints: https://newsapi.org/v2/everything?apiKey=910452c99f54428bb487e74cdb976f0f
-//
-
 /** query params: country
  *  categories = true or categories = false
  */

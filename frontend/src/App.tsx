@@ -37,15 +37,6 @@ function App() {
       url: "/settings",
     },
   ];
-  
-  const [value, setValue] = React.useState(0);
-  const [following, setFollowing] = useState<string[]>([]);
-  const [country, setCountry] = useState("us")
-
-  const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
-    setValue(newValue);
-  };
-
   type CleanArticle = {
     source: string;
     author: string;
@@ -56,7 +47,15 @@ function App() {
     urlToImage: string;
   };
 
-  
+  const [value, setValue] = React.useState(0);
+  const [following, setFollowing] = useState<string[]>([]);
+  const [country, setCountry] = useState("us")
+  // const articles:CleanArticle[] = require("./dummyArticles.json")
+  const [articles, setArticles] = useState<CleanArticle[]>([])
+
+  const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+    setValue(newValue);
+  };
 
   const fetchArticles = () => {
     fetch('/newsToday?country=' + country)
@@ -64,15 +63,15 @@ function App() {
       .then((json) => {console.log(json); setArticles(json)});
       console.log(country)
   }
-  // const articles:CleanArticle[] = require("./dummyArticles.json")
-  const [articles, setArticles] = useState<CleanArticle[]>([])
+  useEffect(() => fetchArticles(), []);
 
-  window.onload = function () {
-    if (localStorage.getItem("hasCodeRunBefore") === null) {
-        fetchArticles()
-        localStorage.setItem("hasCodeRunBefore", "true");
-    }
-}
+
+//   window.onload = function () {
+//     if (localStorage.getItem("hasCodeRunBefore") === null) {
+//         fetchArticles()
+//         localStorage.setItem("hasCodeRunBefore", "true");
+//     }
+// }
 
   const width = 1500;
 
@@ -117,7 +116,6 @@ function App() {
       <Toolbar>
         <Tabs style={widthModifier} variant="fullWidth" value={value} onChange={handleChange}>
           {menu.map((item) => (
-           
             <Tab
               key = {item.name}
               label={item.name}
