@@ -121,10 +121,13 @@ type returnedArticles = {
 // note: user does not have to be logged in for this
 app.get("/newsToday", async function (req: Request, res: Response) {
   const country = req.query.country ? (req.query.country as string) : "us";
-
-  const doc = await articlesCollection.doc(country).get();
-  let articles = doc.data() as returnedArticles;
-  res.send(articles.articles);
+  try {
+    const doc = await articlesCollection.doc(country).get();
+    let articles = doc.data() as returnedArticles;
+    res.send(articles.articles);
+  } catch {
+    console.log("Failure");
+  }
 });
 
 // articlesCollection stores articles for each country

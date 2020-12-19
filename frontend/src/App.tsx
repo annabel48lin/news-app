@@ -66,8 +66,18 @@ function App() {
   }
   // const articles:CleanArticle[] = require("./dummyArticles.json")
   const [articles, setArticles] = useState<CleanArticle[]>([])
-  useEffect(() => fetchArticles());
-  
+
+window.onload = function() {
+  var reloading = sessionStorage.getItem("reloading");
+  if (reloading === "true") {
+      fetchArticles()
+  }
+  fetchArticles()
+}
+function reloadP() {
+  sessionStorage.setItem("reloading", "true");
+  document.location.reload();
+}
 
   const width = 1500;
 
