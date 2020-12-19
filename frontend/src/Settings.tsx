@@ -20,8 +20,9 @@ type Props = {
   readonly callbackCountry: (country: string) => void
   readonly countryI: string
   readonly callbackArticles: () => void
+  readonly callbackUser: (user: firebase.User | null) => void
 }
-const Settings = ({following, callbackFollowing, callbackCountry, countryI, callbackArticles} : Props) => {
+const Settings = ({following, callbackFollowing, callbackCountry, countryI, callbackArticles, callbackUser} : Props) => {
 
   const allTopics = ['business', 'entertainment', 'health', 'science', 'sports', 'technology']
 
@@ -202,9 +203,13 @@ const Settings = ({following, callbackFollowing, callbackCountry, countryI, call
   // fetchUserPrefs();
   console.log("country", country)
 
+const resetFollowingAndSignOut = () => {
+  firebase.auth().signOut()
+  // callbackFollowing(allTopics)
+}
   return (
     <div style={{ marginLeft: "20px" }}>
-      <Authenticated>
+      <Authenticated callbackUser = {callbackUser}>
         <div style={{ width: "100%", overflow: "auto" }}>
           <div style={{ float: "left" }}>
             <h1>Followed Topics: </h1>
@@ -213,7 +218,7 @@ const Settings = ({following, callbackFollowing, callbackCountry, countryI, call
             <br /> <br />
             {/* <button onClick={fetchUserPrefs}>⟳</button> */}
             &nbsp; &nbsp;
-            <button onClick={() => firebase.auth().signOut()}> Sign Out </button>
+            <button onClick={resetFollowingAndSignOut}> Sign Out </button>
           </div>
         </div>
         <div style={{ marginLeft: "20px" }}>

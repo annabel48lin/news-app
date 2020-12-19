@@ -52,6 +52,8 @@ function App() {
   const [country, setCountry] = useState("us")
   // const articles:CleanArticle[] = require("./dummyArticles.json")
   const [articles, setArticles] = useState<CleanArticle[]>([])
+  const [user, setUser] = useState<firebase.User | null>(null);
+  const allTopics = ['business', 'entertainment', 'health', 'science', 'sports', 'technology']
 
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
     setValue(newValue);
@@ -63,15 +65,7 @@ function App() {
       .then((json) => {console.log(json); setArticles(json)});
       console.log(country)
   }
-  useEffect(() => fetchArticles(), []);
-
-
-//   window.onload = function () {
-//     if (localStorage.getItem("hasCodeRunBefore") === null) {
-//         fetchArticles()
-//         localStorage.setItem("hasCodeRunBefore", "true");
-//     }
-// }
+  useEffect(() => fetchArticles(), [country, following]);
 
   const width = 1500;
 
@@ -79,9 +73,7 @@ function App() {
     width: `${width}px`,
   };
 
-
   const email = firebase.auth().currentUser?.email;
-
   const fetchUserPrefs = () => {
     console.log("made it here")
     firebase
@@ -100,16 +92,17 @@ function App() {
             console.log("d",d);
             setFollowing(d.categories);
             setCountry(d.country);
-
             fetchArticles();
-          });
+          })
+          .catch(() => {
+            console.log("failure");
+          })
       })
       .catch(() => {
         console.log("not authenticated get");
       });
   };
-
-  // fetchUserPrefs()
+  // useEffect(() => fetchUserPrefs(), [user]);
 
   return (
       <div style={{ width: "70%" }}>
@@ -158,6 +151,7 @@ function App() {
             callbackCountry = {(country) => setCountry(country)}
             countryI = {country}
             callbackArticles = {fetchArticles}
+            callbackUser = {(user) => setUser(user)}
             />
             )}}
         />

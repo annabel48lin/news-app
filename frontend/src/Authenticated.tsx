@@ -26,9 +26,10 @@ firebase.initializeApp(firebaseConfig);
 
 type Props = {
   readonly children: React.ReactNode;
+  readonly callbackUser: (user: firebase.User | null) => void
 };
 
-const Authenticated = ({ children }: Props) => {
+const Authenticated = ({ children, callbackUser }: Props) => {
   const [user, setUser] = useState<firebase.User | null>(null);
 
   const uiConfig = {
@@ -39,6 +40,7 @@ const Authenticated = ({ children }: Props) => {
   function onAuthStateChange() {
     return firebase.auth().onAuthStateChanged((user) => {
       setUser(user);
+      callbackUser(user)
     });
   }
 
