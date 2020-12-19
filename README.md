@@ -19,14 +19,6 @@ Displays news from various sources and allows the user to search for keywords, f
 
 # Using the app
 Go to the settings tab and sign in. Then, click refresh and choose your country and categories. To update your articles, press refresh again (or maybe a few times). Go to Home and Following and enjoy!
-
-- The Home page displays articles in your country. In the list of articles that we fetch, there are 7 topics: General, Business, Entertainment, Health, Science, Sports, and Technology. We found that articles in the General category are essentially a compilation of articles from the other 6 categories, so we decided to implement the Home page so that if users haven't filtered on any of the 6 topics, we filter on the general topic instead. 
-
-- The Following page displays articles in your country with topics that you are following. 
-
-- The Settings page allows you to change your country and followed topics. When in doubt, press the refresh button :') 
-
-
  
 Group Members: Annabel Lin (all273), Justin Hsu (jah574)
 
