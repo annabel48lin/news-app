@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "start": "node output/index.js"
+    "start": "ts-node index.ts"
   },
   "dependencies": {
     "admin": "^1.4.1",
