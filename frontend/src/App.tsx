@@ -66,7 +66,7 @@ function App() {
   }
   // const articles:CleanArticle[] = require("./dummyArticles.json")
   const [articles, setArticles] = useState<CleanArticle[]>([])
-  // useEffect(() => fetchArticles());
+  useEffect(() => fetchArticles());
   
 
   const width = 1500;

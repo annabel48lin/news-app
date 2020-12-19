@@ -69,7 +69,7 @@ const Following = ({articles, following}:Props) => {
 
   return (
     <div>
-      <h2 style={{marginLeft: "20px"}}> Here's the news from the topics you follow: </h2>
+      <h2 style={{marginLeft: "20px"}}> Here's news from the topics you follow: </h2>
 
       
       <div style={{marginLeft: "20px"}}>

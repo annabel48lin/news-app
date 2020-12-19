@@ -211,7 +211,7 @@ const Settings = ({following, callbackFollowing, callbackCountry, countryI, call
           </div>
           <div style={{ float: "right", width: "70%" }}>
             <br /> <br />
-            <button onClick={fetchUserPrefs}>⟳</button>
+            {/* <button onClick={fetchUserPrefs}>⟳</button> */}
             &nbsp; &nbsp;
             <button onClick={() => firebase.auth().signOut()}> Sign Out </button>
           </div>

@@ -17,10 +17,10 @@ const FilteredArticles = (props: info) => {
   let query = props.query.toLowerCase();
   const filtered: AProps[] = props.articles.filter(
     (s) => 
-      s.description != null && s.description.toLowerCase().indexOf(query) !== -1 ||
-      s.title !=null && s.title.toLowerCase().indexOf(query) !== -1 ||
-      s.source !=null && s.source.toLowerCase().indexOf(query) !== -1 ||
-      s.author !=null && s.author.toLowerCase().indexOf(query) !== -1
+      (s.description != null && s.description.toLowerCase().indexOf(query) !== -1) ||
+      (s.title !=null && s.title.toLowerCase().indexOf(query) !== -1) ||
+      (s.source !=null && s.source.toLowerCase().indexOf(query) !== -1) ||
+      (s.author !=null && s.author.toLowerCase().indexOf(query) !== -1)
   );
 
   return filtered.length < 1 ? (
