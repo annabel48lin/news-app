@@ -2,4 +2,3 @@ node_modules
 ./backend/service-account.json
 ./backend/output
 ./backend/apikey.json
-./frontend/.eslintcache
