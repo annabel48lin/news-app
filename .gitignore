@@ -1,4 +1,4 @@
 node_modules
-../backend/service-account.json
-../backend/output
-../backend/apikey.json
+backend/service-account.json
+backend/output
+backend/apikey.json
