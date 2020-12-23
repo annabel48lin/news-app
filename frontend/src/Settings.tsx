@@ -209,7 +209,7 @@ const resetFollowingAndSignOut = () => {
 }
   return (
     <div style={{ marginLeft: "20px" }}>
-        <Authenticated callbackUser = {callbackUser}>
+      <Authenticated callbackUser = {callbackUser}>
         <div style={{ width: "100%", overflow: "auto" }}>
           <div style={{ float: "left" }}>
             <h1>Followed Topics: </h1>
@@ -221,8 +221,6 @@ const resetFollowingAndSignOut = () => {
             <button onClick={resetFollowingAndSignOut}> Sign Out </button>
           </div>
         </div>
-        </Authenticated>
-
         <div style={{ marginLeft: "20px" }}>
           <select onChange={changeCountry} value={country}>
             {countries.map((country) => (
@@ -239,6 +237,7 @@ const resetFollowingAndSignOut = () => {
             />
           ))}
         </div>
+      </Authenticated>
     </div>
   );
 };
